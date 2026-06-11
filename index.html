@@ -67,6 +67,9 @@
   // Lights up once the Apps Script doGet is deployed; until then it fails silently to a
   // blank slate. The picks data is low-sensitivity (dinners + groceries), like the menu itself.
   var PICKS_READ_URL = APPS_SCRIPT_URL + "?key=e3480f084d3bd04806620f6feebaf041";
+  // Staples list (mirror of cart-builder/pantry-staples.json). Used ONLY to categorize
+  // the week's ingredients into "tap if you're out" staples vs auto-add fresh items.
+  var STAPLES = ["salt","salt and pepper","black pepper","pepper","olive oil","extra virgin olive oil","vegetable oil","canola oil","cooking spray","water","garlic","garlic powder","onion powder","sugar","brown sugar","flour","all-purpose flour","butter","cumin","ground cumin","paprika","smoked paprika","chili powder","cinnamon","ground cinnamon","oregano","dried oregano","basil","dried basil","thyme","rosemary","cayenne","red pepper flakes","crushed red pepper","bay leaf","turmeric","curry powder","garam masala","italian seasoning","baking soda","baking powder","cornstarch","soy sauce","sesame oil","honey","ketchup","mustard","mayonnaise","white vinegar","apple cider vinegar","rice vinegar","vanilla extract"];
 
   var PROTEIN_META = {
     chicken: { label: "Chicken", color: "#9A6A2F" }, salmon: { label: "Salmon", color: "#B5512F" },
@@ -95,6 +98,7 @@
   };
 
   var menu = null, selected = {}, extras = [], submitting = false, babyToggle = false, pending = "";
+  var freshHave = {}, staplesNeeded = {}; // kitchen-check: fresh items you already have (skip), staples you're out of (add)
   var app = document.getElementById("app");
   function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
   function count() { return Object.keys(selected).length; }
@@ -107,7 +111,7 @@
     .catch(function () { onMenu(SAMPLE_MENU); });
 
   function onMenu(m) {
-    menu = m; selected = {}; extras = [];
+    menu = m; selected = {}; extras = []; freshHave = {}; staplesNeeded = {};
     render(); // render immediately; restore saved picks a beat later if available
     loadSavedPicks(function (saved) {
       if (!saved || saved.week_of !== menu.week_of || !Array.isArray(saved.selected)) return; // only this week's data
@@ -116,6 +120,13 @@
         if (menu.candidates.some(function (c) { return c.id === s.id; })) selected[s.id] = true;
       });
       if (Array.isArray(saved.extras)) extras = saved.extras.map(function (x) { return { label: x.item, baby: !!x.baby }; });
+      if (Array.isArray(saved.groceries)) { // restore the kitchen-check toggles
+        var inSaved = {}; saved.groceries.forEach(function (g) { inSaved[canonItem(g.item)] = true; });
+        weekIngredients().forEach(function (i) {
+          if (i.staple) { if (inSaved[i.canon]) staplesNeeded[i.canon] = true; }
+          else if (!inSaved[i.canon]) freshHave[i.canon] = true;
+        });
+      }
       render();
     });
   }
@@ -133,6 +144,76 @@
     document.body.appendChild(s);
   }
   function tally() { var t = {}; menu.candidates.forEach(function (c) { if (selected[c.id] && PROTEIN_META[c.protein]) t[c.protein] = (t[c.protein] || 0) + 1; }); return t; }
+
+  // ===== KITCHEN LIST (ingredients from the chosen dinners) =====
+  function canonItem(name) {
+    return String(name || "").toLowerCase()
+      .replace(/\([^)]*\)/g, " ").replace(/[^a-z0-9 ]+/g, " ")
+      .replace(/\b(fresh|chopped|minced|diced|sliced|large|small|boneless|skinless)\b/g, " ")
+      .replace(/\s+/g, " ").trim();
+  }
+  function isStaple(c) {
+    for (var i = 0; i < STAPLES.length; i++) {
+      var p = STAPLES[i];
+      if (c === p) return true;
+      if (new RegExp("\\b" + p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "\\b").test(c)) return true;
+    }
+    return false;
+  }
+  function weekIngredients() {
+    var seen = {}, out = [];
+    menu.candidates.forEach(function (c) {
+      if (!selected[c.id] || !c.ingredients) return;
+      c.ingredients.forEach(function (ing) {
+        var cn = canonItem(ing);
+        if (!cn || seen[cn]) return;
+        seen[cn] = true;
+        out.push({ canon: cn, display: ing, staple: isStaple(cn), organic: /blueberr|strawberr/.test(cn) });
+      });
+    });
+    out.sort(function (a, b) { return a.canon.localeCompare(b.canon); });
+    return out;
+  }
+  function styleChip(b) { b.style.fontSize = "12.5px"; b.style.fontWeight = "600"; b.style.padding = "6px 12px"; b.style.borderRadius = "999px"; b.style.cursor = "pointer"; }
+  function khint(t) { var d = el("div", null, t); d.style.fontSize = "12px"; d.style.color = "var(--muted)"; d.style.margin = "2px 0 9px"; return d; }
+  function klabel(t, top) { var d = el("div", null, t); d.style.fontFamily = "'Fraunces'"; d.style.fontWeight = "600"; d.style.fontSize = "15px"; if (top) d.style.marginTop = "16px"; return d; }
+  function kitchenBox() {
+    var items = weekIngredients();
+    var box = el("div", "extras-box");
+    var fresh = items.filter(function (i) { return !i.staple; });
+    var stap = items.filter(function (i) { return i.staple; });
+
+    box.appendChild(klabel("Fresh & mains", false));
+    box.appendChild(khint("We'll add these to the cart — tap one off if you already have it."));
+    var frow = el("div", "quick");
+    fresh.forEach(function (i) {
+      var have = !!freshHave[i.canon];
+      var btn = el("button", null, (have ? "" : "✓ ") + i.display + (i.organic ? " · organic" : ""));
+      styleChip(btn);
+      if (have) { btn.style.border = "1px dashed var(--line)"; btn.style.background = "var(--paper)"; btn.style.color = "var(--muted)"; btn.style.textDecoration = "line-through"; }
+      else { btn.style.border = "1px solid var(--ok)"; btn.style.background = "#E9F1EC"; btn.style.color = "var(--ok)"; }
+      btn.onclick = function () { if (freshHave[i.canon]) delete freshHave[i.canon]; else freshHave[i.canon] = true; render(); };
+      frow.appendChild(btn);
+    });
+    box.appendChild(frow);
+
+    if (stap.length) {
+      box.appendChild(klabel("Pantry & staples", true));
+      box.appendChild(khint("You likely have these — tap any you're OUT of to add them."));
+      var srow = el("div", "quick");
+      stap.forEach(function (i) {
+        var need = !!staplesNeeded[i.canon];
+        var btn = el("button", null, (need ? "+ " : "") + i.display);
+        styleChip(btn);
+        if (need) { btn.style.border = "1px solid var(--ember)"; btn.style.background = "#FBEEE8"; btn.style.color = "var(--ember)"; }
+        else { btn.style.border = "1px dashed var(--line)"; btn.style.background = "var(--paper)"; btn.style.color = "var(--muted)"; }
+        btn.onclick = function () { if (staplesNeeded[i.canon]) delete staplesNeeded[i.canon]; else staplesNeeded[i.canon] = true; render(); };
+        srow.appendChild(btn);
+      });
+      box.appendChild(srow);
+    }
+    return box;
+  }
 
   function render() {
     app.innerHTML = "";
@@ -154,6 +235,11 @@
     bar.appendChild(counter); body.appendChild(bar);
 
     var grid = el("div", "grid"); menu.candidates.forEach(function (d) { grid.appendChild(card(d)); }); body.appendChild(grid);
+
+    if (count() > 0) {
+      var ksec = el("div", "sec"); ksec.appendChild(el("span", "eyebrow", "From your dinners")); ksec.appendChild(el("h2", null, "Your week's kitchen list")); ksec.appendChild(el("span", "rule")); body.appendChild(ksec);
+      body.appendChild(kitchenBox());
+    }
 
     var sec = el("div", "sec"); sec.appendChild(el("span", "eyebrow", "While we're shopping")); sec.appendChild(el("h2", null, "Staples & extras")); sec.appendChild(el("span", "rule")); body.appendChild(sec);
     body.appendChild(extrasBox()); app.appendChild(body);
@@ -220,7 +306,12 @@
     if (count() !== PICKS_REQUIRED || submitting) return;
     submitting = true; render();
     var picks = menu.candidates.filter(function (c) { return selected[c.id]; }).map(function (c) { return { id: c.id, title: c.title, protein: c.protein }; });
-    var payload = { week_of: menu.week_of, selected: picks, extras: extras.map(function (x) { return { item: x.label, baby: !!x.baby }; }), submitted_at: new Date().toISOString() };
+    var groceries = []; // the confirmed buy-list from the kitchen check (fresh kept + staples tapped)
+    weekIngredients().forEach(function (i) {
+      var include = i.staple ? !!staplesNeeded[i.canon] : !freshHave[i.canon];
+      if (include) groceries.push({ item: i.display, organic: !!i.organic, staple: i.staple });
+    });
+    var payload = { week_of: menu.week_of, selected: picks, groceries: groceries, extras: extras.map(function (x) { return { item: x.label, baby: !!x.baby }; }), submitted_at: new Date().toISOString() };
     // no-cors fire-and-forget to the Apps Script inbox (opaque response, so we
     // optimistically confirm; a one-time test against the Sheet proves it lands).
     fetch(APPS_SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) })
