@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>This Week's Table</title>
+<title>Next Week's Table</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap');
 :root{--paper:#F3EEE2;--paper-2:#ECE5D4;--card:#FBF8F0;--ink:#22231D;--muted:#6E6857;--pine:#143230;--pine-2:#1C403D;--brass:#B08A3E;--ember:#C75B39;--line:#D9D0BC;--ok:#5E7A52}
@@ -219,7 +219,7 @@
     app.innerHTML = "";
     var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
     w.appendChild(el("div", "cover-mono", "The Standing Order \u00B7 Private Kitchen"));
-    w.appendChild(el("h1", null, "This Week's Table"));
+    w.appendChild(el("h1", null, "Next Week's Table"));
     w.appendChild(el("div", "dates", menu.week_of));
     if (menu.chef_note) { w.appendChild(el("div", "chef-note", "\u201C" + menu.chef_note + "\u201D")); w.appendChild(el("div", "chef-sig", "\u2014 your chef")); }
     cover.appendChild(w); app.appendChild(cover);
@@ -328,7 +328,7 @@
     cover.appendChild(w); app.appendChild(cover);
     var body = el("div", "pc-wrap"), conf = el("div", "confirm");
     conf.appendChild(el("div", "seal", "\u2726"));
-    conf.appendChild(el("h2", null, "Locked in for Monday's shop"));
+    conf.appendChild(el("h2", null, "Locked in for next week's shop"));
     conf.appendChild(el("p", "lede", "Your picks are with the kitchen. That's it \u2014 nothing else to do."));
     var sum = el("div", "summary"); sum.appendChild(el("h4", null, "Dinners"));
     payload.selected.forEach(function (s) { var r = el("div", "row"), dot = el("span", "dot"); dot.style.background = pm(s.protein).color; r.appendChild(dot); r.appendChild(document.createTextNode(s.title)); sum.appendChild(r); });
