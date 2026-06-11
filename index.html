@@ -63,6 +63,10 @@
   var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2BgEYTYy2zef2flsXchHYl5xN9x16FwNAnDgMSYSFXamuFE51Ugm0LO1ifv_IMlOXew/exec";
   var MENU_URL = "./this-week.json"; // your planner commits this file to the repo each week
   var PICKS_REQUIRED = 4;
+  // Read-back: restores this week's saved picks so the household can edit/add all week.
+  // Lights up once the Apps Script doGet is deployed; until then it fails silently to a
+  // blank slate. The picks data is low-sensitivity (dinners + groceries), like the menu itself.
+  var PICKS_READ_URL = APPS_SCRIPT_URL + "?key=e3480f084d3bd04806620f6feebaf041";
 
   var PROTEIN_META = {
     chicken: { label: "Chicken", color: "#9A6A2F" }, salmon: { label: "Salmon", color: "#B5512F" },
@@ -102,7 +106,32 @@
     .then(function (j) { onMenu(j && j.candidates && j.candidates.length ? j : SAMPLE_MENU); })
     .catch(function () { onMenu(SAMPLE_MENU); });
 
-  function onMenu(m) { menu = m; selected = {}; extras = []; render(); }
+  function onMenu(m) {
+    menu = m; selected = {}; extras = [];
+    render(); // render immediately; restore saved picks a beat later if available
+    loadSavedPicks(function (saved) {
+      if (!saved || saved.week_of !== menu.week_of || !Array.isArray(saved.selected)) return; // only this week's data
+      if (Object.keys(selected).length || extras.length) return; // don't clobber if the user already started
+      saved.selected.forEach(function (s) {
+        if (menu.candidates.some(function (c) { return c.id === s.id; })) selected[s.id] = true;
+      });
+      if (Array.isArray(saved.extras)) extras = saved.extras.map(function (x) { return { label: x.item, baby: !!x.baby }; });
+      render();
+    });
+  }
+  // JSONP read of the newest saved picks — Apps Script can't send CORS headers, so we load
+  // it as a <script> with a callback. Times out / fails silently to "no restore".
+  function loadSavedPicks(cb) {
+    var done = false, s = null;
+    var name = "__picks_cb_" + (Date.now() % 1000000);
+    function cleanup() { try { delete window[name]; } catch (e) { window[name] = undefined; } if (s && s.parentNode) s.parentNode.removeChild(s); }
+    var timer = setTimeout(function () { if (!done) { done = true; cleanup(); cb(null); } }, 6000);
+    window[name] = function (data) { if (done) return; done = true; clearTimeout(timer); cleanup(); cb(data); };
+    s = document.createElement("script");
+    s.src = PICKS_READ_URL + "&callback=" + name + "&_=" + Date.now();
+    s.onerror = function () { if (!done) { done = true; clearTimeout(timer); cleanup(); cb(null); } };
+    document.body.appendChild(s);
+  }
   function tally() { var t = {}; menu.candidates.forEach(function (c) { if (selected[c.id] && PROTEIN_META[c.protein]) t[c.protein] = (t[c.protein] || 0) + 1; }); return t; }
 
   function render() {
