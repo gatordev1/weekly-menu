@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>This Week's Table</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap');
+:root{--paper:#F3EEE2;--paper-2:#ECE5D4;--card:#FBF8F0;--ink:#22231D;--muted:#6E6857;--pine:#143230;--pine-2:#1C403D;--brass:#B08A3E;--ember:#C75B39;--line:#D9D0BC;--ok:#5E7A52}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+.pc-root{font-family:'Karla',system-ui,sans-serif;color:var(--ink);background:radial-gradient(120% 80% at 50% -10%,#F8F3E8 0%,var(--paper) 55%,var(--paper-2) 100%);min-height:100vh;padding:0 0 70px}
+.pc-wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.cover{background:linear-gradient(160deg,var(--pine),var(--pine-2));color:#F3EEE2;border-radius:0 0 26px 26px;padding:34px 34px 30px;position:relative;overflow:hidden;box-shadow:0 24px 50px -28px rgba(20,50,48,.55)}
+.cover:before{content:"";position:absolute;inset:14px;border:1px solid rgba(176,138,62,.45);border-radius:14px;pointer-events:none}
+.cover-mono{font-family:'Fraunces';font-weight:600;letter-spacing:.18em;font-size:12px;color:var(--brass);text-transform:uppercase}
+.cover h1{font-family:'Fraunces';font-weight:600;font-size:clamp(30px,5vw,46px);line-height:1.02;margin:10px 0 6px;letter-spacing:-.01em}
+.cover .dates{font-size:13.5px;letter-spacing:.04em;color:#CFE0D4;opacity:.9}
+.chef-note{margin-top:18px;max-width:640px;font-family:'Fraunces';font-style:italic;font-size:clamp(15px,2.2vw,18.5px);line-height:1.5;color:#EFE7D6}
+.chef-sig{margin-top:8px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.bar{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin:26px 0 6px}
+.counter .big{font-family:'Fraunces';font-weight:600;font-size:30px;line-height:1}.counter .big em{font-style:normal;color:var(--ember)}.counter .sub{font-size:12px;color:var(--muted)}
+.tally{display:flex;gap:7px;margin-top:8px;flex-wrap:wrap}.tally span{font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;background:var(--card);border:1px solid var(--line)}
+.sec{display:flex;align-items:center;gap:14px;margin:24px 2px 16px}.sec h2{font-family:'Fraunces';font-weight:600;font-size:21px;margin:0;white-space:nowrap}.sec .rule{flex:1;height:1px;background:var(--line)}.sec .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}@media(max-width:720px){.grid{grid-template-columns:1fr}}
+.dish{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;transition:transform .16s,box-shadow .16s,border-color .16s;text-align:left}
+.dish:hover{transform:translateY(-2px);box-shadow:0 16px 30px -22px rgba(34,35,29,.5)}
+.dish.sel{border-color:var(--ember);box-shadow:0 0 0 1px var(--ember),0 18px 34px -22px rgba(199,91,57,.55)}
+.thumb{height:140px;position:relative;background:var(--pine)}.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .fallback{position:absolute;inset:0;display:grid;place-items:center;font-family:'Fraunces';font-weight:600;font-size:40px;color:rgba(255,255,255,.85)}
+.pick{position:absolute;top:12px;right:12px;width:30px;height:30px;border-radius:50%;border:1.5px solid rgba(255,255,255,.7);background:rgba(20,50,48,.45);display:grid;place-items:center;transition:.16s}
+.dish.sel .pick{background:var(--ember);border-color:var(--ember)}.pick svg{opacity:0;transition:.16s}.dish.sel .pick svg{opacity:1}
+.body{padding:16px 18px 18px}.name{font-family:'Fraunces';font-weight:600;font-size:18px;line-height:1.18;margin:0 0 10px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;align-items:center}.chip{font-size:11px;font-weight:700;padding:4px 9px;border-radius:999px;border:1px solid var(--line);background:var(--paper)}
+.chip.proto{color:#fff;border:0}.chip.tagnew{color:var(--ember);border-color:#E6C3B5;background:#FBEEE8}.chip.tagfam{color:var(--pine);border-color:#C4D6CC;background:#E9F1EC}
+.ingr{margin-top:12px;padding-top:11px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted);line-height:1.6}.ingr b{color:var(--ink)}
+.extras-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.field{display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap}.field input{flex:1;min-width:190px;font-family:'Karla';font-size:14px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.field input:focus{outline:2px solid var(--pine);outline-offset:1px}
+.btn{font-family:'Karla';font-weight:700;font-size:14px;border:0;border-radius:10px;padding:11px 18px;cursor:pointer;transition:.16s}
+.btn-ink{background:var(--pine);color:#F3EEE2}.btn-ink:hover{background:var(--pine-2)}.btn-ghost{background:transparent;border:1px solid var(--line);color:var(--muted)}.btn-ghost:hover{border-color:var(--muted)}
+.quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:6px}.quick button{font-size:12.5px;font-weight:600;border:1px dashed var(--line);background:var(--paper);color:var(--muted);padding:6px 12px;border-radius:999px;cursor:pointer}.quick button:hover{border-style:solid;color:var(--ink)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 8px 6px 13px}
+.tag .org{font-size:10px;font-weight:800;letter-spacing:.06em;color:var(--ok);text-transform:uppercase}.tag .x{cursor:pointer;width:18px;height:18px;border-radius:50%;display:grid;place-items:center;color:var(--muted);font-size:11px}.tag .x:hover{background:var(--line);color:var(--ink)}
+.foot{position:sticky;bottom:0;margin-top:30px;background:linear-gradient(0deg,var(--paper) 70%,rgba(243,238,226,0));padding:18px 0 6px;display:flex;justify-content:center}
+.cta{font-family:'Karla';font-weight:700;font-size:16px;border:0;border-radius:14px;padding:16px 30px;cursor:pointer;background:var(--ember);color:#fff;box-shadow:0 14px 30px -14px rgba(199,91,57,.7);transition:.16s}
+.cta:hover:not(:disabled){transform:translateY(-1px)}.cta:disabled{background:#D8CFBE;color:#8E8775;box-shadow:none;cursor:not-allowed}
+.center{min-height:280px;display:grid;place-items:center;text-align:center;padding:40px}.center h3{font-family:'Fraunces';font-weight:600;font-size:20px;margin:0 0 6px}.center p{color:var(--muted);font-size:14px;max-width:360px;margin:0 auto}
+.plate{width:50px;height:50px;border-radius:50%;border:3px solid var(--line);border-top-color:var(--pine);margin:0 auto 16px;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.plate{animation:none}.dish:hover{transform:none}}
+.confirm{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:30px;margin-top:10px;text-align:center}
+.confirm .seal{width:56px;height:56px;border-radius:50%;background:var(--pine);color:var(--brass);display:grid;place-items:center;margin:0 auto 16px;font-family:'Fraunces';font-size:26px}
+.confirm h2{font-family:'Fraunces';font-weight:600;font-size:26px;margin:0 0 6px}.confirm .lede{color:var(--muted);font-size:14.5px;margin:0 0 22px}
+.summary{text-align:left;max-width:460px;margin:0 auto}.summary h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:800;margin:18px 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.summary .row{display:flex;align-items:center;gap:9px;font-size:15px;padding:5px 0}.summary .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}.summary .org{font-size:10px;font-weight:800;color:var(--ok);border:1px solid var(--ok);border-radius:4px;padding:1px 5px;text-transform:uppercase}
+.confirm-acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+</style>
+</head>
+<body>
+<div class="pc-root"><div id="app"></div></div>
+<script>
+(function () {
+  // ===== CONFIG =====
+  var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2BgEYTYy2zef2flsXchHYl5xN9x16FwNAnDgMSYSFXamuFE51Ugm0LO1ifv_IMlOXew/exec";
+  var MENU_URL = "./this-week.json"; // your planner commits this file to the repo each week
+  var PICKS_REQUIRED = 4;
+
+  var PROTEIN_META = {
+    chicken: { label: "Chicken", color: "#9A6A2F" }, salmon: { label: "Salmon", color: "#B5512F" },
+    turkey: { label: "Turkey", color: "#7A6A33" }, veg: { label: "Veg-forward", color: "#5E7A52" },
+    seafood: { label: "Seafood", color: "#3E6E72" }
+  };
+  function pm(p) { return PROTEIN_META[p] || { label: "Dish", color: "#6B6256" }; }
+  var QUICK_EXTRAS = [
+    { label: "Organic blueberries", baby: true }, { label: "Organic strawberries", baby: true },
+    { label: "Cottage cheese", baby: true }, { label: "Eggs", baby: false }, { label: "Applesauce", baby: true },
+    { label: "Milk", baby: false }, { label: "Coffee", baby: false }, { label: "Rotisserie chicken", baby: false }, { label: "Paper towels", baby: false }
+  ];
+  var SAMPLE_MENU = {
+    week_of: "Sample week",
+    chef_note: "Two of your regulars, two new ones I think the table will love. Salmon's in this week; it sat out last week.",
+    candidates: [
+      { id: "s1", title: "Greek Chicken Meatballs with Salad & Pita", image: "", protein: "chicken", cuisine: "Mediterranean", prep_min: 25, tag: "familiar", ingredients: ["ground chicken", "feta", "cucumber", "tomato", "pita", "red onion", "lemon", "dill"] },
+      { id: "s2", title: "Sweet Potato & Black Bean Enchiladas", image: "", protein: "veg", cuisine: "Mexican", prep_min: 30, tag: "familiar", ingredients: ["sweet potato", "black beans", "corn tortillas", "enchilada sauce", "shredded cheese", "cilantro"] },
+      { id: "s3", title: "Miso-Glazed Salmon with Rice", image: "", protein: "salmon", cuisine: "Japanese", prep_min: 20, tag: "new", ingredients: ["salmon fillet", "white miso", "rice", "scallions", "broccoli", "sesame", "soy sauce"] },
+      { id: "s4", title: "Harissa Chicken Traybake", image: "", protein: "chicken", cuisine: "North African", prep_min: 20, tag: "new", ingredients: ["chicken thighs", "harissa", "zucchini", "red pepper", "chickpeas", "lemon", "olive oil"] },
+      { id: "s5", title: "Ground Turkey Taco Salad", image: "", protein: "turkey", cuisine: "Mexican", prep_min: 20, tag: "familiar", ingredients: ["ground turkey", "taco seasoning", "bagged salad", "bell pepper", "avocado", "lime", "tortilla chips"] },
+      { id: "s6", title: "Chickpea & Sweet Potato Coconut Curry", image: "", protein: "veg", cuisine: "Indian", prep_min: 25, tag: "new", ingredients: ["chickpeas", "sweet potato", "coconut milk", "spinach", "curry paste", "rice", "ginger"] },
+      { id: "s7", title: "Teriyaki Turkey Rice Bowls", image: "", protein: "turkey", cuisine: "Japanese", prep_min: 25, tag: "new", ingredients: ["ground turkey", "teriyaki sauce", "rice", "edamame", "carrot", "cucumber", "scallions"] },
+      { id: "s8", title: "Chicken, Broccoli & Cheese Rice Casserole", image: "", protein: "chicken", cuisine: "American", prep_min: 20, tag: "familiar", ingredients: ["rotisserie chicken", "broccoli", "rice", "cheddar", "cream of chicken", "onion"] }
+    ]
+  };
+
+  var menu = null, selected = {}, extras = [], submitting = false, babyToggle = false, pending = "";
+  var app = document.getElementById("app");
+  function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
+  function count() { return Object.keys(selected).length; }
+
+  app.innerHTML = '<div class="center"><div><div class="plate"></div><div style="font-family:\'Fraunces\';font-size:19px">Setting the table\u2026</div></div></div>';
+
+  fetch(MENU_URL, { cache: "no-store" })
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (j) { onMenu(j && j.candidates && j.candidates.length ? j : SAMPLE_MENU); })
+    .catch(function () { onMenu(SAMPLE_MENU); });
+
+  function onMenu(m) { menu = m; selected = {}; extras = []; render(); }
+  function tally() { var t = {}; menu.candidates.forEach(function (c) { if (selected[c.id] && PROTEIN_META[c.protein]) t[c.protein] = (t[c.protein] || 0) + 1; }); return t; }
+
+  function render() {
+    app.innerHTML = "";
+    var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(el("div", "cover-mono", "The Standing Order \u00B7 Private Kitchen"));
+    w.appendChild(el("h1", null, "This Week's Table"));
+    w.appendChild(el("div", "dates", menu.week_of));
+    if (menu.chef_note) { w.appendChild(el("div", "chef-note", "\u201C" + menu.chef_note + "\u201D")); w.appendChild(el("div", "chef-sig", "\u2014 your chef")); }
+    cover.appendChild(w); app.appendChild(cover);
+
+    var body = el("div", "pc-wrap");
+    var bar = el("div", "bar");
+    var head = el("div", null, "Choose " + PICKS_REQUIRED); head.style.fontFamily = "'Fraunces'"; head.style.fontWeight = "600"; head.style.fontSize = "21px";
+    bar.appendChild(head);
+    var counter = el("div", "counter"); counter.style.textAlign = "right";
+    var big = el("div", "big"); big.innerHTML = "<em>" + count() + "</em> / " + PICKS_REQUIRED; counter.appendChild(big);
+    counter.appendChild(el("div", "sub", "dinners chosen"));
+    if (count() > 0) { var t = tally(), tl = el("div", "tally"); tl.style.justifyContent = "flex-end"; Object.keys(t).forEach(function (k) { var s = el("span", null, t[k] + " " + pm(k).label.toLowerCase()); s.style.color = pm(k).color; tl.appendChild(s); }); counter.appendChild(tl); }
+    bar.appendChild(counter); body.appendChild(bar);
+
+    var grid = el("div", "grid"); menu.candidates.forEach(function (d) { grid.appendChild(card(d)); }); body.appendChild(grid);
+
+    var sec = el("div", "sec"); sec.appendChild(el("span", "eyebrow", "While we're shopping")); sec.appendChild(el("h2", null, "Staples & extras")); sec.appendChild(el("span", "rule")); body.appendChild(sec);
+    body.appendChild(extrasBox()); app.appendChild(body);
+
+    var foot = el("div", "foot"), fw = el("div", "pc-wrap"); fw.style.display = "flex"; fw.style.justifyContent = "center";
+    var cta = el("button", "cta"); var n = count(); cta.disabled = (n !== PICKS_REQUIRED) || submitting;
+    cta.textContent = submitting ? "Sending\u2026" : (n === PICKS_REQUIRED ? "Send my picks to the kitchen \u2192" : "Choose " + (PICKS_REQUIRED - n) + " more");
+    cta.onclick = doSubmit; fw.appendChild(cta); foot.appendChild(fw); app.appendChild(foot);
+  }
+
+  function card(d) {
+    var isSel = !!selected[d.id], atCap = count() >= PICKS_REQUIRED && !isSel;
+    var c = el("div", "dish" + (isSel ? " sel" : "")); if (atCap) c.style.opacity = "0.5";
+    var thumb = el("div", "thumb"); thumb.style.background = pm(d.protein).color;
+    if (d.image) { var img = document.createElement("img"); img.src = d.image; img.alt = ""; img.onerror = function () { img.style.display = "none"; }; thumb.appendChild(img); }
+    thumb.appendChild(el("div", "fallback", (d.title || "?").charAt(0)));
+    var pick = el("div", "pick"); pick.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4.2 4.2L19 7" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'; thumb.appendChild(pick);
+    c.appendChild(thumb);
+    var b = el("div", "body"); b.appendChild(el("h3", "name", d.title));
+    var meta = el("div", "meta");
+    var pc = el("span", "chip proto", pm(d.protein).label); pc.style.background = pm(d.protein).color; meta.appendChild(pc);
+    meta.appendChild(el("span", "chip", d.prep_min + " min prep"));
+    if (d.cuisine) meta.appendChild(el("span", "chip", d.cuisine));
+    meta.appendChild(el("span", "chip " + (d.tag === "new" ? "tagnew" : "tagfam"), d.tag === "new" ? "New find" : "Your regular"));
+    b.appendChild(meta);
+    if (isSel && d.ingredients && d.ingredients.length) { var ing = el("div", "ingr"); ing.innerHTML = "<b>You'll need:</b> " + d.ingredients.join(", "); b.appendChild(ing); }
+    c.appendChild(b);
+    if (!atCap) c.onclick = function () { toggle(d.id); };
+    return c;
+  }
+  function toggle(id) { if (selected[id]) delete selected[id]; else { if (count() >= PICKS_REQUIRED) return; selected[id] = true; } render(); }
+
+  function extrasBox() {
+    var box = el("div", "extras-box"), quick = el("div", "quick");
+    QUICK_EXTRAS.forEach(function (q) { var btn = el("button", null, "+ " + q.label); btn.onclick = function () { addExtra(q.label, q.baby); }; quick.appendChild(btn); });
+    box.appendChild(quick);
+    var field = el("div", "field");
+    var input = document.createElement("input"); input.type = "text"; input.placeholder = "Add anything else \u2014 snacks, diapers, that thing you forgot\u2026"; input.value = pending;
+    input.oninput = function () { pending = input.value; };
+    input.onkeydown = function (e) { if (e.key === "Enter") addExtra(pending, babyToggle); };
+    field.appendChild(input);
+    var babyBtn = el("button", "btn btn-ghost", babyToggle ? "\u2713 For baby (organic)" : "For baby");
+    if (babyToggle) { babyBtn.style.borderColor = "var(--ok)"; babyBtn.style.color = "var(--ok)"; }
+    babyBtn.onclick = function () { babyToggle = !babyToggle; render(); };
+    field.appendChild(babyBtn);
+    var addBtn = el("button", "btn btn-ink", "Add"); addBtn.onclick = function () { addExtra(pending, babyToggle); };
+    field.appendChild(addBtn); box.appendChild(field);
+    if (extras.length) {
+      var tags = el("div", "tags");
+      extras.forEach(function (x) {
+        var tag = el("span", "tag"); tag.appendChild(document.createTextNode(x.label));
+        if (x.baby) tag.appendChild(el("span", "org", "organic"));
+        var xb = el("span", "x", "\u2715"); xb.onclick = function () { removeExtra(x.label); }; tag.appendChild(xb);
+        tags.appendChild(tag);
+      });
+      box.appendChild(tags);
+    }
+    return box;
+  }
+  function addExtra(label, baby) { label = (label || "").trim(); if (!label) return; if (!extras.some(function (x) { return x.label.toLowerCase() === label.toLowerCase(); })) extras.push({ label: label, baby: !!baby }); pending = ""; babyToggle = false; render(); }
+  function removeExtra(label) { extras = extras.filter(function (x) { return x.label !== label; }); render(); }
+
+  function doSubmit() {
+    if (count() !== PICKS_REQUIRED || submitting) return;
+    submitting = true; render();
+    var picks = menu.candidates.filter(function (c) { return selected[c.id]; }).map(function (c) { return { id: c.id, title: c.title, protein: c.protein }; });
+    var payload = { week_of: menu.week_of, selected: picks, extras: extras.map(function (x) { return { item: x.label, baby: !!x.baby }; }), submitted_at: new Date().toISOString() };
+    // no-cors fire-and-forget to the Apps Script inbox (opaque response, so we
+    // optimistically confirm; a one-time test against the Sheet proves it lands).
+    fetch(APPS_SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(payload) })
+      .then(function () { showConfirm(payload); })
+      .catch(function () { showConfirm(payload); });
+  }
+
+  function showConfirm(payload) {
+    submitting = false; app.innerHTML = "";
+    var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(el("div", "cover-mono", "The Standing Order \u00B7 Private Kitchen"));
+    w.appendChild(el("h1", null, "The order's in."));
+    w.appendChild(el("div", "dates", payload.week_of));
+    cover.appendChild(w); app.appendChild(cover);
+    var body = el("div", "pc-wrap"), conf = el("div", "confirm");
+    conf.appendChild(el("div", "seal", "\u2726"));
+    conf.appendChild(el("h2", null, "Locked in for Monday's shop"));
+    conf.appendChild(el("p", "lede", "Your picks are with the kitchen. That's it \u2014 nothing else to do."));
+    var sum = el("div", "summary"); sum.appendChild(el("h4", null, "Dinners"));
+    payload.selected.forEach(function (s) { var r = el("div", "row"), dot = el("span", "dot"); dot.style.background = pm(s.protein).color; r.appendChild(dot); r.appendChild(document.createTextNode(s.title)); sum.appendChild(r); });
+    if (payload.extras.length) { sum.appendChild(el("h4", null, "Staples & extras")); payload.extras.forEach(function (e) { var r = el("div", "row"), dot = el("span", "dot"); dot.style.background = "#6B6256"; r.appendChild(dot); r.appendChild(document.createTextNode(e.item)); if (e.baby) r.appendChild(el("span", "org", "organic")); sum.appendChild(r); }); }
+    conf.appendChild(sum);
+    var acts = el("div", "confirm-acts"); var again = el("button", "btn btn-ghost", "Change my picks"); again.onclick = function () { render(); }; acts.appendChild(again); conf.appendChild(acts);
+    body.appendChild(conf); app.appendChild(body); window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+})();
+</script>
+</body>
+</html>

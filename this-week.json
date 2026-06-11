@@ -1,0 +1,14 @@
+{
+  "week_of": "This week",
+  "chef_note": "Two of your regulars, two new ones I think the table will love. Salmon's in this week; it sat out last week.",
+  "candidates": [
+    { "id": "s1", "title": "Greek Chicken Meatballs with Salad & Pita", "image": "", "protein": "chicken", "cuisine": "Mediterranean", "prep_min": 25, "tag": "familiar", "ingredients": ["ground chicken", "feta", "cucumber", "tomato", "pita", "red onion", "lemon", "dill"] },
+    { "id": "s2", "title": "Sweet Potato & Black Bean Enchiladas", "image": "", "protein": "veg", "cuisine": "Mexican", "prep_min": 30, "tag": "familiar", "ingredients": ["sweet potato", "black beans", "corn tortillas", "enchilada sauce", "shredded cheese", "cilantro"] },
+    { "id": "s3", "title": "Miso-Glazed Salmon with Rice", "image": "", "protein": "salmon", "cuisine": "Japanese", "prep_min": 20, "tag": "new", "ingredients": ["salmon fillet", "white miso", "rice", "scallions", "broccoli", "sesame", "soy sauce"] },
+    { "id": "s4", "title": "Harissa Chicken Traybake", "image": "", "protein": "chicken", "cuisine": "North African", "prep_min": 20, "tag": "new", "ingredients": ["chicken thighs", "harissa", "zucchini", "red pepper", "chickpeas", "lemon", "olive oil"] },
+    { "id": "s5", "title": "Ground Turkey Taco Salad", "image": "", "protein": "turkey", "cuisine": "Mexican", "prep_min": 20, "tag": "familiar", "ingredients": ["ground turkey", "taco seasoning", "bagged salad", "bell pepper", "avocado", "lime", "tortilla chips"] },
+    { "id": "s6", "title": "Chickpea & Sweet Potato Coconut Curry", "image": "", "protein": "veg", "cuisine": "Indian", "prep_min": 25, "tag": "new", "ingredients": ["chickpeas", "sweet potato", "coconut milk", "spinach", "curry paste", "rice", "ginger"] },
+    { "id": "s7", "title": "Teriyaki Turkey Rice Bowls", "image": "", "protein": "turkey", "cuisine": "Japanese", "prep_min": 25, "tag": "new", "ingredients": ["ground turkey", "teriyaki sauce", "rice", "edamame", "carrot", "cucumber", "scallions"] },
+    { "id": "s8", "title": "Chicken, Broccoli & Cheese Rice Casserole", "image": "", "protein": "chicken", "cuisine": "American", "prep_min": 20, "tag": "familiar", "ingredients": ["rotisserie chicken", "broccoli", "rice", "cheddar", "cream of chicken", "onion"] }
+  ]
+}
