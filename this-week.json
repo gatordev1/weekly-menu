@@ -1,14 +1,155 @@
 {
-  "week_of": "This week",
-  "chef_note": "Two of your regulars, two new ones I think the table will love. Salmon's in this week; it sat out last week.",
+  "week_of": "Dinners for June 15 – 18",
+  "chef_note": "4 of your regulars and 4 new ones to try. Salmon's in this week.",
   "candidates": [
-    { "id": "s1", "title": "Greek Chicken Meatballs with Salad & Pita", "image": "", "protein": "chicken", "cuisine": "Mediterranean", "prep_min": 25, "tag": "familiar", "ingredients": ["ground chicken", "feta", "cucumber", "tomato", "pita", "red onion", "lemon", "dill"] },
-    { "id": "s2", "title": "Sweet Potato & Black Bean Enchiladas", "image": "", "protein": "veg", "cuisine": "Mexican", "prep_min": 30, "tag": "familiar", "ingredients": ["sweet potato", "black beans", "corn tortillas", "enchilada sauce", "shredded cheese", "cilantro"] },
-    { "id": "s3", "title": "Miso-Glazed Salmon with Rice", "image": "", "protein": "salmon", "cuisine": "Japanese", "prep_min": 20, "tag": "new", "ingredients": ["salmon fillet", "white miso", "rice", "scallions", "broccoli", "sesame", "soy sauce"] },
-    { "id": "s4", "title": "Harissa Chicken Traybake", "image": "", "protein": "chicken", "cuisine": "North African", "prep_min": 20, "tag": "new", "ingredients": ["chicken thighs", "harissa", "zucchini", "red pepper", "chickpeas", "lemon", "olive oil"] },
-    { "id": "s5", "title": "Ground Turkey Taco Salad", "image": "", "protein": "turkey", "cuisine": "Mexican", "prep_min": 20, "tag": "familiar", "ingredients": ["ground turkey", "taco seasoning", "bagged salad", "bell pepper", "avocado", "lime", "tortilla chips"] },
-    { "id": "s6", "title": "Chickpea & Sweet Potato Coconut Curry", "image": "", "protein": "veg", "cuisine": "Indian", "prep_min": 25, "tag": "new", "ingredients": ["chickpeas", "sweet potato", "coconut milk", "spinach", "curry paste", "rice", "ginger"] },
-    { "id": "s7", "title": "Teriyaki Turkey Rice Bowls", "image": "", "protein": "turkey", "cuisine": "Japanese", "prep_min": 25, "tag": "new", "ingredients": ["ground turkey", "teriyaki sauce", "rice", "edamame", "carrot", "cucumber", "scallions"] },
-    { "id": "s8", "title": "Chicken, Broccoli & Cheese Rice Casserole", "image": "", "protein": "chicken", "cuisine": "American", "prep_min": 20, "tag": "familiar", "ingredients": ["rotisserie chicken", "broccoli", "rice", "cheddar", "cream of chicken", "onion"] }
+    {
+      "id": "box-chicken-casserole",
+      "title": "Chicken, Broccoli & Cheese Rice Casserole",
+      "image": "",
+      "protein": "chicken",
+      "cuisine": "American",
+      "prep_min": 20,
+      "tag": "familiar",
+      "ingredients": [
+        "rotisserie chicken",
+        "broccoli",
+        "rice",
+        "cheddar",
+        "cream of chicken soup",
+        "onion"
+      ]
+    },
+    {
+      "id": "box-slowcooker-thighs",
+      "title": "Asian Slow-Cooker Chicken Thighs with Rice",
+      "image": "",
+      "protein": "chicken",
+      "cuisine": "Asian",
+      "prep_min": 15,
+      "tag": "familiar",
+      "ingredients": [
+        "chicken thighs",
+        "soy sauce",
+        "honey",
+        "garlic",
+        "ginger",
+        "rice",
+        "broccoli",
+        "scallions"
+      ]
+    },
+    {
+      "id": "box-greek-meatballs",
+      "title": "Greek Chicken Meatballs with Salad & Pita",
+      "image": "",
+      "protein": "chicken",
+      "cuisine": "Mediterranean",
+      "prep_min": 25,
+      "tag": "familiar",
+      "ingredients": [
+        "ground chicken",
+        "feta",
+        "cucumber",
+        "tomato",
+        "pita",
+        "red onion",
+        "lemon",
+        "dill"
+      ]
+    },
+    {
+      "id": "box-sweet-potato-enchiladas",
+      "title": "Sweet Potato Enchiladas",
+      "image": "",
+      "protein": "veg",
+      "cuisine": "Mexican",
+      "prep_min": 30,
+      "tag": "familiar",
+      "ingredients": [
+        "sweet potato",
+        "black beans",
+        "corn tortillas",
+        "enchilada sauce",
+        "shredded cheese",
+        "cilantro",
+        "onion"
+      ]
+    },
+    {
+      "id": "spoon-652417",
+      "title": "Moroccan chickpea and lentil stew",
+      "image": "https://img.spoonacular.com/recipes/652417-312x231.jpg",
+      "protein": "veg",
+      "cuisine": "",
+      "prep_min": 30,
+      "tag": "new",
+      "ingredients": [
+        "broccoli",
+        "chickpeas",
+        "carrots",
+        "celery stalks",
+        "lentils",
+        "couscous",
+        "cilantro",
+        "ground cinnamon"
+      ]
+    },
+    {
+      "id": "spoon-637690",
+      "title": "Cheesy Turkey Meatballs",
+      "image": "https://img.spoonacular.com/recipes/637690-312x231.jpg",
+      "protein": "turkey",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "bbq sauce",
+        "breadcrumbs",
+        "carrot",
+        "egg",
+        "garlic",
+        "ground turkey",
+        "milk",
+        "onion"
+      ]
+    },
+    {
+      "id": "spoon-918026",
+      "title": "Skillet Enchilada Dinner",
+      "image": "https://img.spoonacular.com/recipes/918026-312x231.jpg",
+      "protein": "turkey",
+      "cuisine": "Mexican",
+      "prep_min": 40,
+      "tag": "new",
+      "ingredients": [
+        "pepper",
+        "canned tomatoes",
+        "cherry tomatoes",
+        "corn tortillas",
+        "cilantro",
+        "garlic cloves",
+        "chilies",
+        "ground cumin"
+      ]
+    },
+    {
+      "id": "spoon-643789",
+      "title": "Fried Salmon Cakes",
+      "image": "https://img.spoonacular.com/recipes/643789-312x231.jpg",
+      "protein": "salmon",
+      "cuisine": "",
+      "prep_min": 30,
+      "tag": "new",
+      "ingredients": [
+        "brie",
+        "salmon",
+        "chili powder",
+        "cornmeal",
+        "egg",
+        "flat leaf parsley",
+        "garlic",
+        "greek yogurt"
+      ]
+    }
   ]
 }
