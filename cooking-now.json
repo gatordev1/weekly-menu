@@ -1,0 +1,303 @@
+{
+  "_comment": "Sample cooking-now.json — the 4 dinners being COOKED this week, with full recipe data for the page's 'This Week's Recipes' view. Mirrors exactly what cart-builder buildCookingNow() emits (the picks as full candidate objects from this-week.json). Hand-crafted to seed/test the recipe view before a real cart cycle. Publish with: node cart-builder/cart-builder.js publish-cooking-now cart-builder/sample-cooking-now.json",
+  "week_of": "Dinners for June 15 – 18",
+  "generated_at": "2026-06-11T17:00:00Z",
+  "recipes": [
+    {
+      "id": "spoon-642583",
+      "title": "Greek Chicken Meatballs with Salad & Pita",
+      "image": "https://img.spoonacular.com/recipes/642583-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "Mediterranean",
+      "prep_min": 25,
+      "tag": "new",
+      "servings": 4,
+      "source_url": "https://spoonacular.com/greek-chicken-meatballs-642583",
+      "ingredients": [
+        "ground chicken",
+        "feta",
+        "cucumber",
+        "tomato",
+        "pita",
+        "red onion",
+        "lemon",
+        "dill"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "ground chicken",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "name": "feta cheese",
+          "amount": 4,
+          "unit": "oz"
+        },
+        {
+          "name": "cucumber",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "tomato",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "pita bread",
+          "amount": 4,
+          "unit": ""
+        },
+        {
+          "name": "red onion",
+          "amount": 0.5,
+          "unit": ""
+        },
+        {
+          "name": "lemon",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "fresh dill",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic",
+          "amount": 2,
+          "unit": "cloves"
+        },
+        {
+          "name": "olive oil",
+          "amount": 2,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Heat oven to 400°F and line a baking sheet with parchment.",
+        "Mix ground chicken with half the feta, minced garlic, chopped dill, salt, and pepper. Roll into 16 small meatballs.",
+        "Arrange on the sheet, drizzle with olive oil, and bake 18–20 minutes until cooked through.",
+        "Meanwhile, toss diced cucumber, tomato, and thin-sliced red onion with lemon juice, olive oil, and a pinch of salt.",
+        "Warm the pita. Serve the meatballs over the salad with the remaining feta and a squeeze of lemon."
+      ]
+    },
+    {
+      "id": "spoon-654959",
+      "title": "Miso-Glazed Salmon with Rice & Broccoli",
+      "image": "https://img.spoonacular.com/recipes/654959-636x393.jpg",
+      "protein": "salmon",
+      "cuisine": "Japanese",
+      "prep_min": 20,
+      "tag": "new",
+      "servings": 4,
+      "source_url": "https://spoonacular.com/miso-glazed-salmon-654959",
+      "ingredients": [
+        "salmon fillet",
+        "white miso",
+        "rice",
+        "broccoli",
+        "scallions",
+        "soy sauce",
+        "honey",
+        "sesame seeds"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "salmon fillet",
+          "amount": 1.5,
+          "unit": "lb"
+        },
+        {
+          "name": "white miso paste",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "name": "soy sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "honey",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "jasmine rice",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "broccoli",
+          "amount": 1,
+          "unit": "head"
+        },
+        {
+          "name": "scallions",
+          "amount": 3,
+          "unit": ""
+        },
+        {
+          "name": "sesame seeds",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Cook the rice according to package directions.",
+        "Whisk miso, soy sauce, and honey into a glaze. Heat the broiler and line a sheet pan with foil.",
+        "Pat the salmon dry, place skin-side down, and brush generously with the glaze.",
+        "Broil 8–10 minutes until the top caramelizes and the fish flakes easily.",
+        "Steam the broccoli until bright and tender, about 4 minutes.",
+        "Serve the salmon over rice with broccoli, sliced scallions, and a sprinkle of sesame seeds."
+      ]
+    },
+    {
+      "id": "spoon-652417",
+      "title": "Chickpea & Sweet Potato Coconut Curry",
+      "image": "https://img.spoonacular.com/recipes/652417-636x393.jpg",
+      "protein": "veg",
+      "cuisine": "Indian",
+      "prep_min": 30,
+      "tag": "new",
+      "servings": 4,
+      "source_url": "https://spoonacular.com/chickpea-sweet-potato-curry-652417",
+      "ingredients": [
+        "chickpeas",
+        "sweet potato",
+        "coconut milk",
+        "spinach",
+        "curry paste",
+        "rice",
+        "ginger",
+        "onion"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "chickpeas",
+          "amount": 2,
+          "unit": "cans"
+        },
+        {
+          "name": "sweet potato",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "name": "coconut milk",
+          "amount": 1,
+          "unit": "can"
+        },
+        {
+          "name": "baby spinach",
+          "amount": 3,
+          "unit": "cups"
+        },
+        {
+          "name": "red curry paste",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "jasmine rice",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "fresh ginger",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "yellow onion",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "garlic",
+          "amount": 3,
+          "unit": "cloves"
+        }
+      ],
+      "instructions": [
+        "Start the rice. Peel and dice the sweet potato into half-inch cubes.",
+        "Sauté diced onion in oil over medium heat until soft, 5 minutes. Add minced garlic, grated ginger, and curry paste; cook 1 minute until fragrant.",
+        "Stir in the sweet potato, drained chickpeas, and coconut milk plus a splash of water. Simmer 18–20 minutes until the sweet potato is tender.",
+        "Fold in the spinach and cook until just wilted. Season with salt and a squeeze of lime.",
+        "Spoon over rice."
+      ]
+    },
+    {
+      "id": "spoon-716429",
+      "title": "Teriyaki Turkey Rice Bowls",
+      "image": "https://img.spoonacular.com/recipes/716429-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "Japanese",
+      "prep_min": 25,
+      "tag": "new",
+      "servings": 4,
+      "source_url": "https://spoonacular.com/teriyaki-turkey-bowls-716429",
+      "ingredients": [
+        "ground turkey",
+        "teriyaki sauce",
+        "rice",
+        "edamame",
+        "carrot",
+        "cucumber",
+        "scallions",
+        "sesame seeds"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "ground turkey",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "name": "teriyaki sauce",
+          "amount": 0.33,
+          "unit": "cup"
+        },
+        {
+          "name": "jasmine rice",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "shelled edamame",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "carrot",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "cucumber",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "scallions",
+          "amount": 3,
+          "unit": ""
+        },
+        {
+          "name": "sesame seeds",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Cook the rice. Thaw the edamame and julienne the carrot and cucumber.",
+        "Brown the ground turkey in a skillet over medium-high heat, breaking it up, 6–7 minutes.",
+        "Pour in the teriyaki sauce and simmer 2–3 minutes until glossy and the turkey is coated.",
+        "Build bowls: rice topped with teriyaki turkey, edamame, carrot, and cucumber.",
+        "Finish with sliced scallions and sesame seeds."
+      ]
+    }
+  ]
+}
