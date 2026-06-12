@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Next Week's Table</title>
+<title>The Standing Order · Private Kitchen</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap');
 :root{--paper:#F3EEE2;--paper-2:#ECE5D4;--card:#FBF8F0;--ink:#22231D;--muted:#6E6857;--pine:#143230;--pine-2:#1C403D;--brass:#B08A3E;--ember:#C75B39;--line:#D9D0BC;--ok:#5E7A52}
@@ -53,6 +53,49 @@
 .summary{text-align:left;max-width:460px;margin:0 auto}.summary h4{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:800;margin:18px 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}
 .summary .row{display:flex;align-items:center;gap:9px;font-size:15px;padding:5px 0}.summary .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}.summary .org{font-size:10px;font-weight:800;color:var(--ok);border:1px solid var(--ok);border-radius:4px;padding:1px 5px;text-transform:uppercase}
 .confirm-acts{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+/* ===== landing (two cards) ===== */
+.cover-back{display:inline-block;background:transparent;border:1px solid rgba(176,138,62,.5);color:var(--brass);border-radius:999px;padding:6px 13px;font-family:'Karla';font-weight:700;font-size:12.5px;letter-spacing:.03em;cursor:pointer;margin-bottom:16px;transition:.16s}
+.cover-back:hover{background:rgba(176,138,62,.14)}
+.home-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:26px 0 10px}@media(max-width:720px){.home-cards{grid-template-columns:1fr}}
+.home-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px 24px 60px;overflow:hidden;cursor:pointer;transition:transform .16s,box-shadow .16s,border-color .16s;min-height:208px}
+.home-card:hover{transform:translateY(-3px);box-shadow:0 22px 40px -26px rgba(34,35,29,.55);border-color:var(--brass)}
+.home-card:focus-visible{outline:2px solid var(--pine);outline-offset:2px}
+.home-card.cook{background:linear-gradient(165deg,#FBF8F0,#F1EBDB)}
+.home-card .hc-mark{margin-bottom:10px;height:34px}
+.home-card .hc-eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:800}
+.home-card h2{font-family:'Fraunces';font-weight:600;font-size:27px;line-height:1.08;margin:10px 0 8px}
+.home-card p{color:var(--muted);font-size:14.5px;line-height:1.5;margin:0;max-width:34ch}
+.home-card .hc-badge{position:absolute;left:24px;bottom:22px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--pine);background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+.home-card .hc-arrow{position:absolute;right:22px;bottom:22px;color:var(--brass);font-size:22px;transition:transform .16s}
+.home-card:hover .hc-arrow{transform:translateX(4px)}
+/* ===== cook list ===== */
+.cook-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:4px}@media(max-width:720px){.cook-list{grid-template-columns:1fr}}
+.cook-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;text-align:left;transition:transform .16s,box-shadow .16s,border-color .16s}
+.cook-card:hover{transform:translateY(-2px);box-shadow:0 16px 30px -22px rgba(34,35,29,.5);border-color:var(--brass)}
+.cook-card:focus-visible{outline:2px solid var(--pine);outline-offset:2px}
+.cc-thumb{height:172px;position:relative;background:var(--pine)}.cc-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.cc-num{position:absolute;top:10px;left:10px;font-family:'Fraunces';font-weight:600;font-size:13px;color:var(--brass);background:rgba(20,50,48,.62);border:1px solid rgba(176,138,62,.55);padding:3px 9px;border-radius:8px}
+.cc-body{padding:14px 16px 16px}.cc-name{font-family:'Fraunces';font-weight:600;font-size:17px;line-height:1.16;margin:0 0 9px}.cc-meta{display:flex;flex-wrap:wrap;gap:6px}
+/* ===== recipe view ===== */
+.recipe{max-width:760px;margin:0 auto}
+.recipe-hero{border-radius:18px;overflow:hidden;background:var(--pine);position:relative;aspect-ratio:16/9;box-shadow:0 18px 38px -26px rgba(34,35,29,.6)}
+.recipe-hero img{width:100%;height:100%;object-fit:cover;display:block}
+.recipe-hero .fallback{position:absolute;inset:0;display:grid;place-items:center;font-family:'Fraunces';font-weight:600;font-size:72px;color:rgba(255,255,255,.85)}
+.recipe h1{font-family:'Fraunces';font-weight:600;font-size:clamp(26px,4.4vw,38px);line-height:1.06;margin:20px 0 12px}
+.recipe-meta{display:flex;flex-wrap:wrap;gap:8px}
+.r-sec{margin-top:32px}
+.r-sec h3{font-family:'Fraunces';font-weight:600;font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--brass);margin:0 0 16px;display:flex;align-items:center;gap:14px}.r-sec h3 .rule{flex:1;height:1px;background:var(--line)}
+.ingr-list{list-style:none;margin:0;padding:0;columns:2;column-gap:34px}@media(max-width:560px){.ingr-list{columns:1}}
+.ingr-list li{break-inside:avoid;font-size:15.5px;line-height:1.5;padding:8px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:baseline}
+.ingr-list li .amt{font-weight:700;color:var(--pine);white-space:nowrap}.ingr-list li .nm{color:var(--ink)}
+.ingr-list li .org{font-size:9.5px;font-weight:800;color:var(--ok);border:1px solid var(--ok);border-radius:4px;padding:1px 5px;text-transform:uppercase;align-self:center}
+.steps{list-style:none;margin:0;padding:0;counter-reset:step}
+.steps li{counter-increment:step;position:relative;padding:0 0 24px 54px;font-size:16.5px;line-height:1.62;color:var(--ink)}
+.steps li:before{content:counter(step);position:absolute;left:0;top:-3px;width:34px;height:34px;border-radius:50%;background:var(--pine);color:var(--brass);font-family:'Fraunces';font-weight:600;font-size:16px;display:grid;place-items:center}
+.steps li:not(:last-child):after{content:"";position:absolute;left:17px;top:34px;bottom:8px;width:1px;background:var(--line)}
+.r-source{margin-top:24px;font-size:13.5px}.r-source a{color:var(--brass);font-weight:700;text-decoration:none}.r-source a:hover{text-decoration:underline}
+.r-empty{color:var(--muted);font-size:14.5px;font-style:italic;line-height:1.5}
+.empty-cta{margin-top:18px}
 </style>
 </head>
 <body>
@@ -62,6 +105,7 @@
   // ===== CONFIG =====
   var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2BgEYTYy2zef2flsXchHYl5xN9x16FwNAnDgMSYSFXamuFE51Ugm0LO1ifv_IMlOXew/exec";
   var MENU_URL = "./this-week.json"; // your planner commits this file to the repo each week
+  var COOKING_URL = "./cooking-now.json"; // the cart-builder publishes this each week (the 4 dinners being cooked, w/ full recipe data)
   var PICKS_REQUIRED = 4;
   // Read-back: restores this week's saved picks so the household can edit/add all week.
   // Lights up once the Apps Script doGet is deployed; until then it fails silently to a
@@ -99,20 +143,60 @@
 
   var menu = null, selected = {}, extras = [], submitting = false, babyToggle = false, pending = "";
   var freshHave = {}, staplesNeeded = {}; // kitchen-check: fresh items you already have (skip), staples you're out of (add)
+  // ===== ROUTER STATE (two-card app) =====
+  // view: "landing" | "cook" (this week's recipe list) | "recipe" (one recipe) | "plan" (the picker)
+  var view = "landing", menuLoaded = false;
+  var cooking = null, cookingState = "loading", activeRecipe = null;
   var app = document.getElementById("app");
   function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
   function count() { return Object.keys(selected).length; }
 
-  app.innerHTML = '<div class="center"><div><div class="plate"></div><div style="font-family:\'Fraunces\';font-size:19px">Setting the table\u2026</div></div></div>';
+  // Boot: show the landing immediately, then load both data sources in the background.
+  draw();
+  loadMenu();
+  loadCooking();
 
-  fetch(MENU_URL, { cache: "no-store" })
-    .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (j) { onMenu(j && j.candidates && j.candidates.length ? j : SAMPLE_MENU); })
-    .catch(function () { onMenu(SAMPLE_MENU); });
+  function loadMenu() {
+    fetch(MENU_URL, { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) { onMenu(j && j.candidates && j.candidates.length ? j : SAMPLE_MENU); })
+      .catch(function () { onMenu(SAMPLE_MENU); });
+  }
+  function loadCooking() {
+    cookingState = "loading";
+    fetch(COOKING_URL, { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (j) {
+        if (j && Array.isArray(j.recipes) && j.recipes.length) { cooking = j; cookingState = "ready"; }
+        else { cooking = j || null; cookingState = "empty"; }
+        if (view === "landing" || view === "cook") draw();
+      })
+      .catch(function () { cookingState = "empty"; if (view === "landing" || view === "cook") draw(); });
+  }
+
+  // ===== ROUTER =====
+  function go(v) { view = v; if (v !== "recipe") activeRecipe = null; draw(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+  function draw() {
+    if (view === "cook") return renderCook();
+    if (view === "recipe") return renderRecipe();
+    if (view === "plan") return menu ? render() : app.replaceChildren(loadingBlock("Setting the table\u2026"));
+    return renderLanding();
+  }
+  function clickable(node, fn) {
+    node.onclick = fn; node.tabIndex = 0; node.setAttribute("role", "button");
+    node.onkeydown = function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); fn(); } };
+    return node;
+  }
+  function coverBack(label, onBack) { var b = el("button", "cover-back"); b.innerHTML = "\u2039 " + label; b.onclick = onBack; return b; }
+  function loadingBlock(text) {
+    var c = el("div", "center"), d = el("div");
+    d.appendChild(el("div", "plate")); var t = el("div", null, text); t.style.fontFamily = "'Fraunces'"; t.style.fontSize = "19px"; d.appendChild(t);
+    c.appendChild(d); return c;
+  }
 
   function onMenu(m) {
-    menu = m; selected = {}; extras = []; freshHave = {}; staplesNeeded = {};
-    render(); // render immediately; restore saved picks a beat later if available
+    menu = m; menuLoaded = true; selected = {}; extras = []; freshHave = {}; staplesNeeded = {};
+    draw(); // refresh whatever view is showing (landing badge, or the picker); restore saved picks a beat later
     loadSavedPicks(function (saved) {
       if (!saved || saved.week_of !== menu.week_of || !Array.isArray(saved.selected)) return; // only this week's data
       if (Object.keys(selected).length || extras.length) return; // don't clobber if the user already started
@@ -127,7 +211,7 @@
           else if (!inSaved[i.canon]) freshHave[i.canon] = true;
         });
       }
-      render();
+      draw();
     });
   }
   // JSONP read of the newest saved picks — Apps Script can't send CORS headers, so we load
@@ -218,6 +302,7 @@
   function render() {
     app.innerHTML = "";
     var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(coverBack("The Kitchen", function () { go("landing"); }));
     w.appendChild(el("div", "cover-mono", "The Standing Order \u00B7 Private Kitchen"));
     w.appendChild(el("h1", null, "Next Week's Table"));
     w.appendChild(el("div", "dates", menu.week_of));
@@ -322,6 +407,7 @@
   function showConfirm(payload) {
     submitting = false; app.innerHTML = "";
     var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(coverBack("The Kitchen", function () { go("landing"); }));
     w.appendChild(el("div", "cover-mono", "The Standing Order \u00B7 Private Kitchen"));
     w.appendChild(el("h1", null, "The order's in."));
     w.appendChild(el("div", "dates", payload.week_of));
@@ -336,6 +422,163 @@
     conf.appendChild(sum);
     var acts = el("div", "confirm-acts"); var again = el("button", "btn btn-ghost", "Change my picks"); again.onclick = function () { render(); }; acts.appendChild(again); conf.appendChild(acts);
     body.appendChild(conf); app.appendChild(body); window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  // ===== LANDING (two cards) =====
+  function svgMark(svg) { var d = el("div", "hc-mark"); d.innerHTML = svg; return d; }
+  var MARK_COOK = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B08A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19h18"/><path d="M5 19a7 7 0 0 1 14 0"/><path d="M12 7.2V5.4"/><circle cx="12" cy="4.4" r=".7" fill="#B08A3E" stroke="none"/></svg>';
+  var MARK_PLAN = '<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#B08A3E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9.2 4h5.6v2H9.2zM8.6 11h6.8M8.6 15h4.6"/></svg>';
+
+  function renderLanding() {
+    app.innerHTML = "";
+    var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(el("div", "cover-mono", "The Standing Order · Private Kitchen"));
+    w.appendChild(el("h1", null, "The Kitchen"));
+    w.appendChild(el("div", "dates", "Cook this week · plan the next"));
+    cover.appendChild(w); app.appendChild(cover);
+
+    var body = el("div", "pc-wrap"), cards = el("div", "home-cards");
+
+    var cook = el("div", "home-card cook");
+    cook.appendChild(svgMark(MARK_COOK));
+    cook.appendChild(el("div", "hc-eyebrow", "Cooking now"));
+    cook.appendChild(el("h2", null, "This Week's Recipes"));
+    cook.appendChild(el("p", null, "Tonight's plan, start to finish — ingredients and method, no scrolling past a life story."));
+    var cb = el("div", "hc-badge", cookingState === "ready" ? (cooking.recipes.length + " dinners ready") : cookingState === "loading" ? "Loading…" : "Not posted yet");
+    cook.appendChild(cb); cook.appendChild(el("div", "hc-arrow", "→"));
+    clickable(cook, function () { go("cook"); }); cards.appendChild(cook);
+
+    var plan = el("div", "home-card");
+    plan.appendChild(svgMark(MARK_PLAN));
+    plan.appendChild(el("div", "hc-eyebrow", "Plan ahead"));
+    plan.appendChild(el("h2", null, "Next Week's Menu"));
+    plan.appendChild(el("p", null, "Pick four dinners for next week and set the kitchen list. Takes a minute."));
+    plan.appendChild(el("div", "hc-badge", (menuLoaded && menu && menu.week_of) ? menu.week_of : "Choose 4"));
+    plan.appendChild(el("div", "hc-arrow", "→"));
+    clickable(plan, function () { go("plan"); }); cards.appendChild(plan);
+
+    body.appendChild(cards); app.appendChild(body);
+  }
+
+  // ===== COOK (this week's recipe list) =====
+  function renderCook() {
+    app.innerHTML = "";
+    var cover = el("div", "cover"), w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(coverBack("The Kitchen", function () { go("landing"); }));
+    w.appendChild(el("div", "cover-mono", "Cooking Now · This Week"));
+    w.appendChild(el("h1", null, "This Week's Recipes"));
+    if (cooking && cooking.week_of) w.appendChild(el("div", "dates", cooking.week_of));
+    cover.appendChild(w); app.appendChild(cover);
+
+    var body = el("div", "pc-wrap");
+    if (cookingState === "loading") {
+      body.appendChild(loadingBlock("Bringing up the recipes…"));
+    } else if (cookingState !== "ready" || !cooking || !cooking.recipes.length) {
+      var c = el("div", "center"), inner = el("div");
+      inner.appendChild(el("h3", null, "No recipes posted yet"));
+      inner.appendChild(el("p", null, "This week's dinners appear here once the menu's been picked and the cart is set. In the meantime, you can choose next week's menu."));
+      var b = el("button", "cta empty-cta", "Plan next week's menu →"); b.onclick = function () { go("plan"); };
+      inner.appendChild(b); c.appendChild(inner); body.appendChild(c);
+    } else {
+      var sec = el("div", "sec"); sec.appendChild(el("span", "eyebrow", "Tap to cook")); sec.appendChild(el("h2", null, cooking.recipes.length + " dinners this week")); sec.appendChild(el("span", "rule")); body.appendChild(sec);
+      var list = el("div", "cook-list");
+      cooking.recipes.forEach(function (r, i) { list.appendChild(cookCard(r, i)); });
+      body.appendChild(list);
+    }
+    app.appendChild(body);
+  }
+
+  function cookCard(r, i) {
+    var card = el("div", "cook-card");
+    var thumb = el("div", "cc-thumb"); thumb.style.background = pm(r.protein).color;
+    if (r.image) { var img = document.createElement("img"); img.src = r.image; img.alt = ""; img.onerror = function () { img.style.display = "none"; }; thumb.appendChild(img); }
+    thumb.appendChild(el("div", "cc-num", ("0" + (i + 1)).slice(-2)));
+    card.appendChild(thumb);
+    var b = el("div", "cc-body"); b.appendChild(el("h3", "cc-name", r.title));
+    var meta = el("div", "cc-meta");
+    var pc = el("span", "chip proto", pm(r.protein).label); pc.style.background = pm(r.protein).color; meta.appendChild(pc);
+    if (r.prep_min) meta.appendChild(el("span", "chip", r.prep_min + " min"));
+    if (r.servings) meta.appendChild(el("span", "chip", "serves " + r.servings));
+    b.appendChild(meta); card.appendChild(b);
+    clickable(card, function () { activeRecipe = i; go("recipe"); });
+    return card;
+  }
+
+  // ===== RECIPE (one dish) =====
+  function fmtAmt(a) {
+    if (a == null || a === "") return "";
+    var n = Number(a); if (!isFinite(n) || n <= 0) return "";
+    var whole = Math.floor(n + 1e-9), frac = n - whole;
+    var F = [[0.25, "¼"], [0.333, "⅓"], [0.5, "½"], [0.667, "⅔"], [0.75, "¾"]];
+    for (var k = 0; k < F.length; k++) { if (Math.abs(frac - F[k][0]) < 0.02) return (whole ? whole : "") + F[k][1]; }
+    return (Math.round(n * 100) / 100).toString();
+  }
+  function recipeIngredients(r) {
+    var out = [];
+    var berry = function (s) { return /blueberr|strawberr/.test(String(s).toLowerCase()); };
+    if (Array.isArray(r.ingredients_detail) && r.ingredients_detail.length) {
+      r.ingredients_detail.forEach(function (d) {
+        var amt = fmtAmt(d.amount), u = (d.unit || "").trim();
+        out.push({ amt: amt ? (amt + (u ? " " + u : "")) : "", name: d.name, organic: berry(d.name) });
+      });
+    } else if (Array.isArray(r.ingredients)) {
+      r.ingredients.forEach(function (n) { out.push({ amt: "", name: n, organic: berry(n) }); });
+    }
+    return out;
+  }
+  function renderRecipe() {
+    var r = (cooking && cooking.recipes) ? cooking.recipes[activeRecipe] : null;
+    if (!r) { go("cook"); return; }
+    app.innerHTML = "";
+    var cover = el("div", "cover"); cover.style.padding = "22px 34px 22px";
+    var w = el("div", "pc-wrap"); w.style.padding = "0";
+    w.appendChild(coverBack("This week's recipes", function () { go("cook"); }));
+    w.appendChild(el("div", "cover-mono", (r.cuisine ? r.cuisine + " · " : "") + pm(r.protein).label));
+    cover.appendChild(w); app.appendChild(cover);
+
+    var body = el("div", "pc-wrap"), rc = el("div", "recipe");
+    var hero = el("div", "recipe-hero"); hero.style.background = pm(r.protein).color;
+    if (r.image) { var img = document.createElement("img"); img.src = r.image; img.alt = ""; img.onerror = function () { img.style.display = "none"; }; hero.appendChild(img); }
+    hero.appendChild(el("div", "fallback", (r.title || "?").charAt(0)));
+    rc.appendChild(hero);
+    rc.appendChild(el("h1", null, r.title));
+    var meta = el("div", "recipe-meta");
+    var pc = el("span", "chip proto", pm(r.protein).label); pc.style.background = pm(r.protein).color; meta.appendChild(pc);
+    if (r.servings) meta.appendChild(el("span", "chip", "Serves " + r.servings));
+    if (r.prep_min) meta.appendChild(el("span", "chip", r.prep_min + " min prep"));
+    if (r.cuisine) meta.appendChild(el("span", "chip", r.cuisine));
+    rc.appendChild(meta);
+
+    var ing = recipeIngredients(r);
+    if (ing.length) {
+      var s1 = el("div", "r-sec"), h1 = el("h3", null, "Ingredients"); h1.appendChild(el("span", "rule")); s1.appendChild(h1);
+      var ul = el("ul", "ingr-list");
+      ing.forEach(function (line) {
+        var li = document.createElement("li");
+        if (line.amt) li.appendChild(el("span", "amt", line.amt));
+        li.appendChild(el("span", "nm", line.name));
+        if (line.organic) li.appendChild(el("span", "org", "organic"));
+        ul.appendChild(li);
+      });
+      s1.appendChild(ul); rc.appendChild(s1);
+    }
+
+    var s2 = el("div", "r-sec"), h2 = el("h3", null, "Method"); h2.appendChild(el("span", "rule")); s2.appendChild(h2);
+    if (r.instructions && r.instructions.length) {
+      var ol = el("ol", "steps");
+      r.instructions.forEach(function (step) { ol.appendChild(el("li", null, step)); });
+      s2.appendChild(ol);
+    } else {
+      s2.appendChild(el("p", "r-empty", "No step-by-step method came with this recipe." + (r.source_url ? " The source link below has the full instructions." : "")));
+    }
+    rc.appendChild(s2);
+
+    if (r.source_url) {
+      var src = el("div", "r-source"); var a = document.createElement("a");
+      a.href = r.source_url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "View original recipe ↗";
+      src.appendChild(a); rc.appendChild(src);
+    }
+    body.appendChild(rc); app.appendChild(body);
   }
 })();
 </script>
