@@ -1,155 +1,746 @@
 {
-  "week_of": "Dinners for June 15 – 18",
-  "chef_note": "4 of your regulars and 4 new ones to try. Salmon's in this week.",
+  "week_of": "Dinners for June 22 – 25",
+  "chef_note": "A fresh lineup — 8 to choose from, pick your four. Salmon sits out this week.",
   "candidates": [
     {
-      "id": "box-chicken-casserole",
-      "title": "Chicken, Broccoli & Cheese Rice Casserole",
-      "image": "",
+      "id": "spoon-1515523",
+      "title": "Instant Pot BBQ Chicken Thighs",
+      "image": "https://img.spoonacular.com/recipes/1515523-636x393.jpg",
       "protein": "chicken",
-      "cuisine": "American",
-      "prep_min": 20,
-      "tag": "familiar",
-      "ingredients": [
-        "rotisserie chicken",
-        "broccoli",
-        "rice",
-        "cheddar",
-        "cream of chicken soup",
-        "onion"
-      ]
-    },
-    {
-      "id": "box-slowcooker-thighs",
-      "title": "Asian Slow-Cooker Chicken Thighs with Rice",
-      "image": "",
-      "protein": "chicken",
-      "cuisine": "Asian",
-      "prep_min": 15,
-      "tag": "familiar",
-      "ingredients": [
-        "chicken thighs",
-        "soy sauce",
-        "honey",
-        "garlic",
-        "ginger",
-        "rice",
-        "broccoli",
-        "scallions"
-      ]
-    },
-    {
-      "id": "box-greek-meatballs",
-      "title": "Greek Chicken Meatballs with Salad & Pita",
-      "image": "",
-      "protein": "chicken",
-      "cuisine": "Mediterranean",
-      "prep_min": 25,
-      "tag": "familiar",
-      "ingredients": [
-        "ground chicken",
-        "feta",
-        "cucumber",
-        "tomato",
-        "pita",
-        "red onion",
-        "lemon",
-        "dill"
-      ]
-    },
-    {
-      "id": "box-sweet-potato-enchiladas",
-      "title": "Sweet Potato Enchiladas",
-      "image": "",
-      "protein": "veg",
-      "cuisine": "Mexican",
-      "prep_min": 30,
-      "tag": "familiar",
-      "ingredients": [
-        "sweet potato",
-        "black beans",
-        "corn tortillas",
-        "enchilada sauce",
-        "shredded cheese",
-        "cilantro",
-        "onion"
-      ]
-    },
-    {
-      "id": "spoon-652417",
-      "title": "Moroccan chickpea and lentil stew",
-      "image": "https://img.spoonacular.com/recipes/652417-636x393.jpg",
-      "protein": "veg",
       "cuisine": "",
-      "prep_min": 30,
+      "prep_min": 25,
       "tag": "new",
       "ingredients": [
-        "broccoli",
-        "chickpeas",
-        "carrots",
-        "celery stalks",
-        "lentils",
-        "couscous",
-        "cilantro",
-        "ground cinnamon"
-      ]
+        "water",
+        "chicken thighs",
+        "pepper",
+        "onion powder",
+        "bbq sauce",
+        "garlic",
+        "brown sugar"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "water",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "chicken thighs",
+          "amount": 5,
+          "unit": ""
+        },
+        {
+          "name": "pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "onion powder",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "bbq sauce",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "garlic",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "brown sugar",
+          "amount": 1,
+          "unit": "tbsp"
+        }
+      ],
+      "instructions": [
+        "Add water to the bottom of the instant pot.",
+        "Place the trivet and then place the chicken around the trivet. Top the chicken with garlic",
+        "Cook on manual high for 8 minutes and then 10 minutes natural release.",
+        "Add seasonings and brown sugar to BBQ sauce and smother the chicken thighs.",
+        "Place in the broiler for 4-6 minutes to make a delicious glaze.",
+        "Serve with a garlic butter parmesan noodles."
+      ],
+      "servings": 4,
+      "source_url": "https://www.pinkwhen.com/instant-pot-bbq-chicken-thighs/"
     },
     {
-      "id": "spoon-637690",
-      "title": "Cheesy Turkey Meatballs",
-      "image": "https://img.spoonacular.com/recipes/637690-636x393.jpg",
-      "protein": "turkey",
+      "id": "spoon-661095",
+      "title": "Spicy Fried Chicken w Sweet Chili Sauce",
+      "image": "https://img.spoonacular.com/recipes/661095-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "Southern",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "cayenne pepper",
+        "chicken drumsticks",
+        "chili dipping sauce",
+        "cornstarch",
+        "flour",
+        "gochugaru",
+        "ground pepper",
+        "hot sauce"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "cayenne pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "chicken drumsticks",
+          "amount": 10,
+          "unit": ""
+        },
+        {
+          "name": "chili dipping sauce",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "cornstarch",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "flour",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "gochugaru",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "ground pepper",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "hot sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sea salt",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "water",
+          "amount": 1,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "For the short marinade/pre-rub: In a large bowl, mix the first 3 ingredients (salt, pepper, and hot sauce) with the chicken pieces until thoroughly coated.",
+        "Let sit for at least 15 minutes.2.For the batter: In a large bowl, whisk together all dry ingredients. Slowly whisk in the water and whisk until smooth.",
+        "Add more cornstarch or flour to get a thick, pancake-like consistency.",
+        "Let the batter sit at room temperature for 15 minutes.",
+        "Heat the oil on medium-high heat in a large Dutch oven or pot.",
+        "Transfer half the chicken into the batter.",
+        "Remove the chicken, 1 piece at a time, from the batter (allowing any excess to drip back into the bowl) and carefully transfer to the oil. Fry the chicken until deep golden brown and just cooked through, about 12 minutes.",
+        "Transfer to paper towels to remove excess oil and cool.",
+        "Serve with sweet chili sauce or sauce of preference. Enjoy."
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/BV5D5SP5/spicy-fried-chicken-w-sweet-chili-sauce"
+    },
+    {
+      "id": "spoon-644571",
+      "title": "Ginger Chicken Stir-Fry",
+      "image": "https://img.spoonacular.com/recipes/644571-636x393.jpg",
+      "protein": "chicken",
       "cuisine": "",
       "prep_min": 45,
       "tag": "new",
       "ingredients": [
-        "bbq sauce",
-        "breadcrumbs",
-        "carrot",
-        "egg",
-        "garlic",
-        "ground turkey",
-        "milk",
-        "onion"
-      ]
+        "broccoli/cauliflower/carrots",
+        "chicken breasts",
+        "chicken broth",
+        "brown rice",
+        "cornstarch",
+        "ground ginger",
+        "onion",
+        "teriyaki sauce"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "broccoli/cauliflower/carrots",
+          "amount": 16,
+          "unit": "ounces"
+        },
+        {
+          "name": "chicken breasts",
+          "amount": 1,
+          "unit": "pound"
+        },
+        {
+          "name": "chicken broth",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "brown rice",
+          "amount": 3,
+          "unit": "cups"
+        },
+        {
+          "name": "cornstarch",
+          "amount": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "ground ginger",
+          "amount": 2,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "onion",
+          "amount": 1,
+          "unit": "medium"
+        },
+        {
+          "name": "teriyaki sauce",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "vegetable oil",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "name": "water",
+          "amount": 3,
+          "unit": "cups"
+        }
+      ],
+      "instructions": [
+        "In shallow baking dish, combine teriyaki sauce and water; add chicken pieces, coating well. Cover and refrigerate two hours.",
+        "Drain marinade from chicken pieces. In large skillet or wok, heat oil; stir-fry chicken and onion until chicken is slightly browned. Stir in vegetables, ginger, and wine. Cover; simmer 4 to 5 minutes, or until vegetables are tender crisp. In small bowl, combine cornstarch and water until smooth.Gradually add to skillet, stirring constantly, until thickened.",
+        "Serve over hot rice.*Or use 1 package (16 ounces) frozen vegetable mixture of your choice.NOTE: Optional ingredients are omitted from the nutritional calculations.When ingredient options appear in a recipe, the first ingredient choice is used for calculation."
+      ],
+      "servings": 6,
+      "source_url": "https://www.foodista.com/recipe/HVGBX52M/ginger-chicken-stir-fry"
     },
     {
-      "id": "spoon-918026",
-      "title": "Skillet Enchilada Dinner",
-      "image": "https://img.spoonacular.com/recipes/918026-636x393.jpg",
-      "protein": "turkey",
-      "cuisine": "Mexican",
-      "prep_min": 40,
-      "tag": "new",
-      "ingredients": [
-        "pepper",
-        "canned tomatoes",
-        "cherry tomatoes",
-        "corn tortillas",
-        "cilantro",
-        "garlic cloves",
-        "chilies",
-        "ground cumin"
-      ]
-    },
-    {
-      "id": "spoon-643789",
-      "title": "Fried Salmon Cakes",
-      "image": "https://img.spoonacular.com/recipes/643789-636x393.jpg",
-      "protein": "salmon",
+      "id": "spoon-1096185",
+      "title": "North by Northwest Couscous Salad",
+      "image": "https://img.spoonacular.com/recipes/1096185-636x393.jpg",
+      "protein": "veg",
       "cuisine": "",
       "prep_min": 30,
       "tag": "new",
       "ingredients": [
-        "brie",
-        "salmon",
+        "lemon zest",
+        "squeezed lemon juice",
+        "sugar",
+        "dijon mustard",
+        "kosher salt",
+        "pepper",
+        "olive oil",
+        "tri-color pearl couscous"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "lemon zest",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "squeezed lemon juice",
+          "amount": 2,
+          "unit": "Tbs"
+        },
+        {
+          "name": "sugar",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "dijon mustard",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "kosher salt",
+          "amount": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "name": "pepper",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "olive oil",
+          "amount": 3,
+          "unit": "Tbs"
+        },
+        {
+          "name": "tri-color pearl couscous",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "apricots",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "carrots",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "celery",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "raisins",
+          "amount": 4,
+          "unit": "Tbs"
+        },
+        {
+          "name": "garbanzo beans",
+          "amount": 1,
+          "unit": "can"
+        },
+        {
+          "name": "hazelnuts",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "onion",
+          "amount": 0.33333334,
+          "unit": "cup"
+        },
+        {
+          "name": "parsley",
+          "amount": 0.5,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "Whisk together the lemon zest, lemon juice, sugar, mustard, and salt.Slowly add in the olive oil, continuing to whisk, until emulsified.Prepare the couscous according to the package instructions.Toast the hazelnuts for approximately 10 minutes at 350F.",
+        "Let cool until safe to touch, then chop.",
+        "Mix all remaining ingredients in a large bowl.",
+        "Add the couscous and dressing.",
+        "Mix well and serve."
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/8S3RLBHN/north-by-northwest-couscous-salad"
+    },
+    {
+      "id": "spoon-716627",
+      "title": "Easy Homemade Rice and Beans",
+      "image": "https://img.spoonacular.com/recipes/716627-636x393.jpg",
+      "protein": "veg",
+      "cuisine": "",
+      "prep_min": 35,
+      "tag": "new",
+      "ingredients": [
+        "black beans",
+        "canned tomatoes",
         "chili powder",
-        "cornmeal",
-        "egg",
-        "flat leaf parsley",
+        "cumin",
+        "ground pepper",
+        "optional: of hot sauce",
+        "olive oil",
+        "onion"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "black beans",
+          "amount": 15,
+          "unit": "ounce"
+        },
+        {
+          "name": "canned tomatoes",
+          "amount": 10,
+          "unit": "ounce"
+        },
+        {
+          "name": "chili powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "cumin",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "ground pepper",
+          "amount": 0.25,
+          "unit": "tsp"
+        },
+        {
+          "name": "optional: of hot sauce",
+          "amount": 4,
+          "unit": "dashes"
+        },
+        {
+          "name": "olive oil",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "onion",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "rice",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "water",
+          "amount": 3,
+          "unit": "Tbsp"
+        }
+      ],
+      "instructions": [
+        "Heat the olive oil in a large pot over medium heat.",
+        "Add onions and saute until soft, or for about 5 minutes.",
+        "Add all other remaining ingredients and stir together. Increase the heat to medium high and bring to a boil. Cover and reduce heat to medium low so that the mixture simmers. Cook for 15-20 minutes, or until rice is fluffy and liquid is absorbed.*",
+        "Serve with salsa, cheese, and sour cream."
+      ],
+      "servings": 2,
+      "source_url": "http://cooking2perfection.blogspot.com/2012/11/easy-homemade-rice-and-beans.html"
+    },
+    {
+      "id": "spoon-642332",
+      "title": "Eggs Florentine",
+      "image": "https://img.spoonacular.com/recipes/642332-636x393.jpg",
+      "protein": "veg",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "butter",
+        "cayenne pepper",
+        "eggs",
+        "muffins",
+        "kosher salt",
+        "lemon juice",
+        "spinach",
+        "water"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "butter",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "cayenne pepper",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "eggs",
+          "amount": 11,
+          "unit": ""
+        },
+        {
+          "name": "muffins",
+          "amount": 4,
+          "unit": ""
+        },
+        {
+          "name": "kosher salt",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "lemon juice",
+          "amount": 2,
+          "unit": "Tablespoons"
+        },
+        {
+          "name": "spinach",
+          "amount": 10,
+          "unit": "ounces"
+        },
+        {
+          "name": "water",
+          "amount": 4,
+          "unit": "Tablespoons"
+        }
+      ],
+      "instructions": [
+        "Saute spinach in a saute pan",
+        "Poach 8 eggs and toast muffins. Top each muffin with spinach, then a poached egg.To make the hollandaise sauce, melt the butter and keep it warm, but not hot.",
+        "Heat the lemon juice until just warmed. Have small saucepan with boiling water and a measuring tablespoon ready.",
+        "Place the top of a double boiler over hot water.",
+        "Place 3 egg yolks in the top of a double boiler and whisk until they begin to thicken. Now add 1 tablespoon of the boiling water. Continue to beat the sauce until it begins to thicken. Repeat with the remaining water, one tablespoon at a time, beating the mixture after each addition.Now add the warmed lemon juice.",
+        "Remove the double boiler from the heat. Beat the sauce briskly with a wire whisk. Continue to beat the mixture as you slowly pour in the melted butter.",
+        "Add the salt and cayenne and beat the sauce until it is thick.",
+        "Serve immediately."
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/PNM2B3TH/eggs-florentine"
+    },
+    {
+      "id": "spoon-1096163",
+      "title": "One Pan Healthy Turkey Beans and Rice",
+      "image": "https://img.spoonacular.com/recipes/1096163-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "",
+      "prep_min": 40,
+      "tag": "new",
+      "ingredients": [
+        "canola oil",
+        "onion",
+        "jalapenos",
+        "bell pepper",
         "garlic",
-        "greek yogurt"
-      ]
+        "canned tomatoes",
+        "ground turkey",
+        "salt"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "canola oil",
+          "amount": 3,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "onion",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "jalapenos",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "bell pepper",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "garlic",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "canned tomatoes",
+          "amount": 14.5,
+          "unit": "oz"
+        },
+        {
+          "name": "ground turkey",
+          "amount": 1,
+          "unit": "pound"
+        },
+        {
+          "name": "salt",
+          "amount": 0.75,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "pepper",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "rice",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "kidney beans",
+          "amount": 16,
+          "unit": "oz"
+        },
+        {
+          "name": "cannellini beans",
+          "amount": 15.5,
+          "unit": "oz"
+        },
+        {
+          "name": "black beans",
+          "amount": 15,
+          "unit": "oz"
+        },
+        {
+          "name": "chili beans",
+          "amount": 15,
+          "unit": "oz"
+        },
+        {
+          "name": "chicken stock",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "water",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "chili seasoning mix",
+          "amount": 1,
+          "unit": "packet"
+        },
+        {
+          "name": "garlic powder",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "onion powder",
+          "amount": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "paprika",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "chili powder",
+          "amount": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "cream",
+          "amount": 8,
+          "unit": "tbsp"
+        },
+        {
+          "name": "green onions",
+          "amount": 8,
+          "unit": "servings"
+        }
+      ],
+      "instructions": [
+        "In medium stockpot over medium heat, add oil, onion, jalapenos and red pepper, then saute for 5 minutes. Stir in the garlic, canned diced tomatoes, ground turkey, salt and pepper. Cook until meat is done (165F).",
+        "Add rice to mixture and cook over low heat for 3 minutes, coating rice with the oils from the pan.",
+        "Add all the beans (all drained, except for the chili beans), chicken stock, water and seasonings. Bring to a simmer, then cover and cook on low for 20 minutes (do not peek).Fluff with a fork and garnish with sour cream and green onions, if desired."
+      ],
+      "servings": 8,
+      "source_url": "https://www.foodista.com/recipe/CYRSBX66/one-pan-healthy-turkey-beans-and-rice"
+    },
+    {
+      "id": "spoon-638764",
+      "title": "Chipotle Turkey Chili",
+      "image": "https://img.spoonacular.com/recipes/638764-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "American",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "poblano pepper",
+        "jalapeno pepper",
+        "extra virgin olive oil",
+        "onion",
+        "garlic",
+        "ground turkey",
+        "chili powder",
+        "chipotle peppers in adobo sauce"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "poblano pepper",
+          "amount": 1,
+          "unit": "large"
+        },
+        {
+          "name": "jalapeno pepper",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "extra virgin olive oil",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "onion",
+          "amount": 1,
+          "unit": "large"
+        },
+        {
+          "name": "garlic",
+          "amount": 3,
+          "unit": "cloves"
+        },
+        {
+          "name": "ground turkey",
+          "amount": 1.5,
+          "unit": "pounds"
+        },
+        {
+          "name": "chili powder",
+          "amount": 3,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "chipotle peppers in adobo sauce",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "adobo sauce from chipotle peppers",
+          "amount": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "chicken stock",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "kidney beans",
+          "amount": 14.5,
+          "unit": "oz"
+        },
+        {
+          "name": "canned tomatoes",
+          "amount": 28,
+          "unit": "oz"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "cream",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "parsley",
+          "amount": 4,
+          "unit": "servings"
+        }
+      ],
+      "instructions": [
+        "Preheat oven to 400 degrees F.",
+        "Place poblano and jalapeno peppers on a baking sheet lined with foil, drizzle with olive oil, and rub to coat. Roast peppers in oven about 30 minutes, turning once during roasting.",
+        "Remove from oven, immediately wrap loosely in foil, and let sit 15-30 minutes. Peel off and discard the skin.",
+        "Remove the seeds and ribs, and discard. Dice peppers and set aside.",
+        "Heat 2 Tbsp olive in in a large pot over medium heat.",
+        "Add onion and garlic and saute until softened, 5 to 8 minutes.",
+        "Add ground turkey and heat until cooked through, breaking up into pieces and stirring occasionally as it cooks. Season with salt and pepper. Once cooked, add chili powder, chipotle peppers, jalapeno and poblano peppers, and adobo sauce. Stir to combine then add chicken stock, beans, and tomatoes. Cover, reduce heat to low, and let cook at least 1 to 2 hours, stirring ocassionally. Season with salt, pepper, and chili powder to taste before serving.",
+        "Serve in bowls topped with sour cream and chopped fresh parsley."
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/TTW5KQMM/chipotle-turkey-chili"
     }
   ]
 }
