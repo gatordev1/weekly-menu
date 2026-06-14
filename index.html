@@ -104,8 +104,8 @@
 (function () {
   // ===== CONFIG =====
   var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx2BgEYTYy2zef2flsXchHYl5xN9x16FwNAnDgMSYSFXamuFE51Ugm0LO1ifv_IMlOXew/exec";
-  var MENU_URL = "./this-week.json"; // your planner commits this file to the repo each week
-  var COOKING_URL = "./cooking-now.json"; // the cart-builder publishes this each week (the 4 dinners being cooked, w/ full recipe data)
+  var MENU_URL = "./next-weeks-menu.json"; // recipe-planner publishes this each week (8 candidates — the "Next Week's Menu" card)
+  var COOKING_URL = "./this-weeks-recipes.json"; // recipe-planner publishes this each week (the 4 dinners being cooked, w/ full recipe data — the "This Week's Recipes" card)
   var PICKS_REQUIRED = 4;
   // Read-back: restores this week's saved picks so the household can edit/add all week.
   // Lights up once the Apps Script doGet is deployed; until then it fails silently to a
@@ -126,26 +126,13 @@
     { label: "Cottage cheese", baby: true }, { label: "Eggs", baby: false }, { label: "Applesauce", baby: true },
     { label: "Milk", baby: false }, { label: "Coffee", baby: false }, { label: "Rotisserie chicken", baby: false }, { label: "Paper towels", baby: false }
   ];
-  var SAMPLE_MENU = {
-    week_of: "Sample week",
-    chef_note: "Two of your regulars, two new ones I think the table will love. Salmon's in this week; it sat out last week.",
-    candidates: [
-      { id: "s1", title: "Greek Chicken Meatballs with Salad & Pita", image: "", protein: "chicken", cuisine: "Mediterranean", prep_min: 25, tag: "familiar", ingredients: ["ground chicken", "feta", "cucumber", "tomato", "pita", "red onion", "lemon", "dill"] },
-      { id: "s2", title: "Sweet Potato & Black Bean Enchiladas", image: "", protein: "veg", cuisine: "Mexican", prep_min: 30, tag: "familiar", ingredients: ["sweet potato", "black beans", "corn tortillas", "enchilada sauce", "shredded cheese", "cilantro"] },
-      { id: "s3", title: "Miso-Glazed Salmon with Rice", image: "", protein: "salmon", cuisine: "Japanese", prep_min: 20, tag: "new", ingredients: ["salmon fillet", "white miso", "rice", "scallions", "broccoli", "sesame", "soy sauce"] },
-      { id: "s4", title: "Harissa Chicken Traybake", image: "", protein: "chicken", cuisine: "North African", prep_min: 20, tag: "new", ingredients: ["chicken thighs", "harissa", "zucchini", "red pepper", "chickpeas", "lemon", "olive oil"] },
-      { id: "s5", title: "Ground Turkey Taco Salad", image: "", protein: "turkey", cuisine: "Mexican", prep_min: 20, tag: "familiar", ingredients: ["ground turkey", "taco seasoning", "bagged salad", "bell pepper", "avocado", "lime", "tortilla chips"] },
-      { id: "s6", title: "Chickpea & Sweet Potato Coconut Curry", image: "", protein: "veg", cuisine: "Indian", prep_min: 25, tag: "new", ingredients: ["chickpeas", "sweet potato", "coconut milk", "spinach", "curry paste", "rice", "ginger"] },
-      { id: "s7", title: "Teriyaki Turkey Rice Bowls", image: "", protein: "turkey", cuisine: "Japanese", prep_min: 25, tag: "new", ingredients: ["ground turkey", "teriyaki sauce", "rice", "edamame", "carrot", "cucumber", "scallions"] },
-      { id: "s8", title: "Chicken, Broccoli & Cheese Rice Casserole", image: "", protein: "chicken", cuisine: "American", prep_min: 20, tag: "familiar", ingredients: ["rotisserie chicken", "broccoli", "rice", "cheddar", "cream of chicken", "onion"] }
-    ]
-  };
-
   var menu = null, selected = {}, extras = [], submitting = false, babyToggle = false, pending = "";
   var freshHave = {}, staplesNeeded = {}; // kitchen-check: fresh items you already have (skip), staples you're out of (add)
   // ===== ROUTER STATE (two-card app) =====
   // view: "landing" | "cook" (this week's recipe list) | "recipe" (one recipe) | "plan" (the picker)
-  var view = "landing", menuLoaded = false;
+  // No sample/placeholder menu: if next-weeks-menu.json doesn't load, say so plainly rather than
+  // showing fake recipes (a silent sample once masked real publish failures).
+  var view = "landing", menuLoaded = false, menuError = false;
   var cooking = null, cookingState = "loading", activeRecipe = null;
   var app = document.getElementById("app");
   function el(t, c, x) { var e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; }
@@ -159,8 +146,11 @@
   function loadMenu() {
     fetch(MENU_URL, { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (j) { onMenu(j && j.candidates && j.candidates.length ? j : SAMPLE_MENU); })
-      .catch(function () { onMenu(SAMPLE_MENU); });
+      .then(function (j) {
+        if (j && j.candidates && j.candidates.length) { onMenu(j); }
+        else { menuError = true; menuLoaded = true; draw(); }
+      })
+      .catch(function () { menuError = true; menuLoaded = true; draw(); });
   }
   function loadCooking() {
     cookingState = "loading";
@@ -179,7 +169,7 @@
   function draw() {
     if (view === "cook") return renderCook();
     if (view === "recipe") return renderRecipe();
-    if (view === "plan") return menu ? render() : app.replaceChildren(loadingBlock("Setting the table\u2026"));
+    if (view === "plan") return menu ? render() : app.replaceChildren(menuError ? errorBlock("Next week's menu didn't load. Give it a minute and refresh \u2014 it's published Sunday night.") : loadingBlock("Setting the table\u2026"));
     return renderLanding();
   }
   function clickable(node, fn) {
@@ -193,9 +183,15 @@
     d.appendChild(el("div", "plate")); var t = el("div", null, text); t.style.fontFamily = "'Fraunces'"; t.style.fontSize = "19px"; d.appendChild(t);
     c.appendChild(d); return c;
   }
+  function errorBlock(text) {
+    var c = el("div", "center"), d = el("div");
+    var t = el("div", null, text); t.style.fontFamily = "'Fraunces'"; t.style.fontSize = "19px"; t.style.maxWidth = "26ch"; t.style.margin = "0 auto"; d.appendChild(t);
+    var b = el("button", "cta", "Back"); b.style.marginTop = "18px"; b.onclick = function () { go("landing"); }; d.appendChild(b);
+    c.appendChild(d); return c;
+  }
 
   function onMenu(m) {
-    menu = m; menuLoaded = true; selected = {}; extras = []; freshHave = {}; staplesNeeded = {};
+    menu = m; menuLoaded = true; menuError = false; selected = {}; extras = []; freshHave = {}; staplesNeeded = {};
     draw(); // refresh whatever view is showing (landing badge, or the picker); restore saved picks a beat later
     loadSavedPicks(function (saved) {
       if (!saved || saved.week_of !== menu.week_of || !Array.isArray(saved.selected)) return; // only this week's data
@@ -453,7 +449,7 @@
     plan.appendChild(el("div", "hc-eyebrow", "Plan ahead"));
     plan.appendChild(el("h2", null, "Next Week's Menu"));
     plan.appendChild(el("p", null, "Pick four dinners for next week and set the kitchen list. Takes a minute."));
-    plan.appendChild(el("div", "hc-badge", (menuLoaded && menu && menu.week_of) ? menu.week_of : "Choose 4"));
+    plan.appendChild(el("div", "hc-badge", menuError ? "Didn't load" : (menuLoaded && menu && menu.week_of) ? menu.week_of : "Choose 4"));
     plan.appendChild(el("div", "hc-arrow", "→"));
     clickable(plan, function () { go("plan"); }); cards.appendChild(plan);
 
