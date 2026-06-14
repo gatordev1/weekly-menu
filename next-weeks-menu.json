@@ -1,682 +1,795 @@
 {
   "week_of": "Dinners for June 22 – 25",
-  "chef_note": "A fresh lineup — eight to choose from, pick your four. Salmon's in this week.",
+  "chef_note": "A fresh lineup — eight to choose from, pick your four. Salmon sits out this week.",
   "candidates": [
     {
-      "id": "spoon-638088",
-      "title": "Chicken Farfalle with Low-Fat Alfredo Sauce",
-      "image": "https://img.spoonacular.com/recipes/638088-636x393.jpg",
+      "id": "spoon-639957",
+      "title": "Colorful Tomato and Spinach Seafood Pasta",
+      "image": "https://img.spoonacular.com/recipes/639957-636x393.jpg",
       "protein": "chicken",
-      "cuisine": "Mediterranean",
-      "prep_min": 45,
+      "cuisine": "",
+      "prep_min": 20,
       "tag": "new",
       "ingredients": [
-        "bell pepper",
-        "butter",
-        "chicken breasts",
-        "farfalle pasta",
+        "chicken broth",
+        "cod",
         "flour",
-        "garlic powder",
-        "juice of lemon",
+        "garlic",
+        "lemon juice",
+        "olive oil",
         "parmesan cheese",
-        "salt",
-        "skim milk",
-        "white wine"
+        "roma tomatoes",
+        "salt and pepper",
+        "shallot",
+        "spinach",
+        "white wine",
+        "pasta",
+        "to)"
       ],
       "ingredients_detail": [
         {
-          "name": "bell pepper",
-          "amount": 4,
-          "unit": "servings"
-        },
-        {
-          "name": "butter",
-          "amount": 1.5,
-          "unit": "Tbs"
-        },
-        {
-          "name": "chicken breasts",
-          "amount": 1,
-          "unit": "pound"
-        },
-        {
-          "name": "farfalle pasta",
-          "amount": 1,
-          "unit": "lb"
-        },
-        {
-          "name": "flour",
-          "amount": 4,
-          "unit": "servings"
-        },
-        {
-          "name": "garlic powder",
-          "amount": 1,
-          "unit": "tablespoon"
-        },
-        {
-          "name": "juice of lemon",
-          "amount": 1,
-          "unit": ""
-        },
-        {
-          "name": "parmesan cheese",
-          "amount": 2,
-          "unit": "teaspoons"
-        },
-        {
-          "name": "salt",
-          "amount": 4,
-          "unit": "servings"
-        },
-        {
-          "name": "skim milk",
-          "amount": 1.5,
-          "unit": "cups"
-        },
-        {
-          "name": "white wine",
-          "amount": 0.33333334,
-          "unit": "cup"
-        }
-      ],
-      "instructions": [
-        "Cook chicken breasts (I sauteed mine with a little olive oil and salt and pepper) and set aside. Cook pasta while cooking the chicken and set aside.",
-        "In a sauce pan, melt butter.",
-        "Add flour and stir in with butter, cook for 1 minute.",
-        "Whisk in milk, salt and pepper, garlic powder, lemon juice, and wine. Bring to a boil, constantly whisking. Reduce the heat and simmer for about 5 more minutes. Sauce should thicken.",
-        "In a large saute pan, add pasta, chicken, and any other desired additions.",
-        "Heat pan on medium heat.",
-        "Add alfredo sauce and toss with pasta.",
-        "Sprinkle with Parmesan cheese and additional salt and pepper (if needed) and serve!Notes: This recipe made more sauce than I really needed, but I liked having extra. This way, you can add as much sauce as you prefer!"
-      ],
-      "servings": 4,
-      "source_url": "https://www.foodista.com/recipe/KBLGPNRP/chicken-farfalle-with-low-fat-alfredo-sauce"
-    },
-    {
-      "id": "spoon-641903",
-      "title": "Easy Chicken Marsala",
-      "image": "https://img.spoonacular.com/recipes/641903-636x393.jpg",
-      "protein": "chicken",
-      "cuisine": "",
-      "prep_min": 45,
-      "tag": "new",
-      "ingredients": [
-        "butter",
-        "chicken breasts",
-        "flour",
-        "marsala wine",
-        "milk",
-        "mushrooms",
-        "pepper",
-        "salt"
-      ],
-      "ingredients_detail": [
-        {
-          "name": "butter",
-          "amount": 0.25,
-          "unit": "cup"
-        },
-        {
-          "name": "chicken breasts",
-          "amount": 8,
-          "unit": "servings"
-        },
-        {
-          "name": "flour",
-          "amount": 2,
-          "unit": "teaspoons"
-        },
-        {
-          "name": "marsala wine",
-          "amount": 0.75,
-          "unit": "cup"
-        },
-        {
-          "name": "milk",
-          "amount": 1,
-          "unit": "cup"
-        },
-        {
-          "name": "mushrooms",
-          "amount": 1,
-          "unit": "cup"
-        },
-        {
-          "name": "pepper",
-          "amount": 0.125,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "salt",
+          "name": "chicken broth",
           "amount": 0.5,
-          "unit": "teaspoon"
-        }
-      ],
-      "instructions": [
-        "In large saute or fry pan, melt butter. While butter is melting, combine flour, salt and pepper in small bowl. Dip each piece of chicken in milk; shake off excess. Dredge chicken in flour mixture and add to fry pan. (I like to cut chicken breasts in half before coating.)",
-        "Saute chicken in butter over medium to medium-high heat until browned and cooked through, turning often.",
-        "Add more butter as needed. (Be careful turning chicken so as not to break off any of the flour coating.)",
-        "Remove chicken from pan and place on platter. Keep chicken warm while making the sauce.Turn heat to medium high and add the mushrooms; saute until cooked. With mushrooms still in the pan, deglaze with the wine, stirring to get all of the brown bits off the bottom of the pan. Turn heat to medium low and continue to cook sauce, stirring frequently, until sauce has thickened slightly.(Note: Sauce should be tasted frequently, and more wine or butter can be added as necessary. If sauce does not thicken properly, add a little bit of flour and continue to stir.)When sauce is ready, add chicken back to the pan and turn to coat.",
-        "Remove chicken to serving platter and top with remaining sauce. Decorate with parsley sprigs.Submitted by: Lisa M. Rohner"
-      ],
-      "servings": 8,
-      "source_url": "https://www.foodista.com/recipe/NBRBXZFZ/easy-chicken-marsala"
-    },
-    {
-      "id": "spoon-1095683",
-      "title": "Paleo Mango Coconut Curried Chicken Salad",
-      "image": "https://img.spoonacular.com/recipes/1095683-636x393.jpg",
-      "protein": "chicken",
-      "cuisine": "",
-      "prep_min": 45,
-      "tag": "new",
-      "ingredients": [
-        "chicken breast",
-        "coconut oil",
-        "mango",
-        "blueberries",
-        "pumpkin seeds",
-        "green onions",
-        "coconut",
-        "coconut cream",
-        "curry powder",
-        "salt"
-      ],
-      "ingredients_detail": [
-        {
-          "name": "chicken breast",
-          "amount": 2,
-          "unit": "small"
+          "unit": "cup"
         },
         {
-          "name": "coconut oil",
+          "name": "cod",
+          "amount": 8,
+          "unit": "ounces"
+        },
+        {
+          "name": "flour",
           "amount": 2,
           "unit": "tablespoons"
         },
         {
-          "name": "mango",
-          "amount": 200,
-          "unit": "g"
-        },
-        {
-          "name": "blueberries",
-          "amount": 50,
-          "unit": "g"
-        },
-        {
-          "name": "pumpkin seeds",
+          "name": "garlic",
           "amount": 2,
-          "unit": "Tablespoons"
+          "unit": "cloves"
         },
         {
-          "name": "green onions",
+          "name": "lemon juice",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "olive oil",
+          "amount": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "roma tomatoes",
+          "amount": 2,
+          "unit": "large"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": 2,
+          "unit": "servings"
+        },
+        {
+          "name": "shallot",
+          "amount": 1,
+          "unit": "large"
+        },
+        {
+          "name": "spinach",
+          "amount": 4,
+          "unit": "cups"
+        },
+        {
+          "name": "white wine",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "pasta",
+          "amount": 4,
+          "unit": "ounces"
+        },
+        {
+          "name": "to)",
+          "amount": 0.25,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "Cook spaghetti according to package directions.",
+        "Heat oil in large non-stick skillet.",
+        "Add onion and garlic and cook 3-4 minutes.",
+        "Add tomatoes and cook another 3-4 minutes until tender.Toss cod with flour and salt and pepper to taste.",
+        "Add cod to pan and cook another 3 minutes, add another tsp olive oil if necessary.",
+        "Add chicken broth and wine and cook another 3 minutes, stirring gently to make sauce, but not break up fish.",
+        "Add spinach and basil and cook another 3-4 minutes until spinach just wilts and sauce has reduced nicely.Top pasta with cod and parmesan cheese."
+      ],
+      "servings": 2,
+      "source_url": "https://www.foodista.com/recipe/CTD7FW43/colorful-tomato-and-spinach-seafood-pasta"
+    },
+    {
+      "id": "spoon-637260",
+      "title": "Cashew Nut Chicken",
+      "image": "https://img.spoonacular.com/recipes/637260-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "",
+      "prep_min": 20,
+      "tag": "new",
+      "ingredients": [
+        "carrots",
+        "cashew nuts",
+        "heart celery",
+        "chicken breasts",
+        "chili flakes",
+        "chili paste",
+        "rice",
+        "garlic",
+        "mushroom",
+        "onion",
+        "oyster sauce",
+        "peppers",
+        "soy sauce",
+        "sugar",
+        "vegetable oil",
+        "vinegar"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "carrots",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "cashew nuts",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "heart celery",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "chicken breasts",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "chili flakes",
+          "amount": 6,
+          "unit": "servings"
+        },
+        {
+          "name": "chili paste",
+          "amount": 1.5,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "rice",
+          "amount": 6,
+          "unit": "servings"
+        },
+        {
+          "name": "garlic",
+          "amount": 4,
+          "unit": "cloves"
+        },
+        {
+          "name": "mushroom",
+          "amount": 8,
+          "unit": "oz"
+        },
+        {
+          "name": "onion",
+          "amount": 0.5,
+          "unit": ""
+        },
+        {
+          "name": "oyster sauce",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "peppers",
+          "amount": 6,
+          "unit": "servings"
+        },
+        {
+          "name": "soy sauce",
+          "amount": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "sugar",
           "amount": 1,
           "unit": "teaspoon"
         },
         {
-          "name": "coconut",
-          "amount": 2,
-          "unit": "Tablespoons"
-        },
-        {
-          "name": "coconut cream",
-          "amount": 60,
-          "unit": "ml"
-        },
-        {
-          "name": "curry powder",
+          "name": "vegetable oil",
           "amount": 1,
-          "unit": "Tablespoon"
+          "unit": "tablespoon"
         },
         {
-          "name": "salt",
-          "amount": 2,
-          "unit": "servings"
+          "name": "vinegar",
+          "amount": 1,
+          "unit": "teaspoon"
         }
       ],
       "instructions": [
-        "Dice the chicken breast into small pieces and pan-fry them in the coconut oil until fully cooked.",
-        "Let cool.",
-        "Place the chicken pieces into a large bowl with the mango, blueberries, pumpkin seeds, chives, coconut shreds, curry powder, coconut cream, and salt to taste.",
-        "Mix together well.",
-        "Serve by itself, on top of a salad, or on a baked butternut squash half."
+        "Heat up a wok and vegetable oil. When the oil is hot, add garlic and brown it.",
+        "Add chicken and cook them till they all cooked through,",
+        "Add onion and mushroom and saute them till translucent",
+        "Add all other vegetable and seasonings except chili paste.",
+        "Saute for about 10 mins and add chili paste. If it's too dry, add 1 tablespoon of chicken stock or water to lighten the paste.When it's all mixed well, turn off the heat.",
+        "Add cilantro and cashew nuts.",
+        "Served with warm rice"
       ],
-      "servings": 2,
-      "source_url": "https://www.foodista.com/recipe/TRXSK43B/paleo-mango-coconut-curried-chicken-salad-recipe"
+      "servings": 6,
+      "source_url": "https://www.foodista.com/recipe/7YL4LGLJ/cashew-nut-chicken"
     },
     {
-      "id": "spoon-679539",
-      "title": "Cherry Berry Coconut Almond Smoothie Bowl",
-      "image": "https://img.spoonacular.com/recipes/679539-636x393.png",
+      "id": "spoon-638369",
+      "title": "Korean Sweet n Sour Chicken",
+      "image": "https://img.spoonacular.com/recipes/638369-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "Chinese",
+      "prep_min": 30,
+      "tag": "new",
+      "ingredients": [
+        "carrots",
+        "chicken breasts",
+        "cider vinegar",
+        "corn starch",
+        "cornstarch",
+        "edamame",
+        "egg",
+        "flour",
+        "onion",
+        "pineapple juice",
+        "soy sauce",
+        "sugar",
+        "vegetable oil",
+        "water"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "carrots",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "chicken breasts",
+          "amount": 2,
+          "unit": "lbs"
+        },
+        {
+          "name": "cider vinegar",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "name": "corn starch",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "cornstarch",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "edamame",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "egg",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "flour",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "onion",
+          "amount": 1,
+          "unit": "medium size"
+        },
+        {
+          "name": "pineapple juice",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "soy sauce",
+          "amount": 2,
+          "unit": "tbsp"
+        },
+        {
+          "name": "sugar",
+          "amount": 3,
+          "unit": "tbsp"
+        },
+        {
+          "name": "vegetable oil",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "water",
+          "amount": 1,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "Cut the chicken into thin strips, about 1 or 2-inch pieces.",
+        "Add soy sauce to the chicken for a short marination; mix well and set aside.",
+        "Cut the vegetables into large bite-sized pieces. Set aside until the sauce is ready and thickened.Make batter by mixing the flour, cornstarch, water and beaten egg.",
+        "Add more flour until a thick consistency is reached. Dip the marinated chicken strips into the batter.Bring vegetable oil to medium high heat. Deep fry each of the strips for about 3, 4 min for each batch or until browned and cooked through. When finished, place on paper towel-lined dish to remove excess oil. Once the first round of frying is done, heat the oil and re-fry the batch for the 2nd time to make it really crispy (optional).To make the sauce bring the following ingredients in a saucepan: one cup of water along 3 tbsp vinegar, 3 tbsp sugar, and 2 tbsp of soy sauce. Bring to a rapid boil and then add the mixture of cornstarch and water.",
+        "Add desired vegetables and let simmer for about 5 minutes or until it thickens.On a large plate, add the fried chicken strips, then pour over the sauce/vegetable mixture and serve while warm."
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/6458DTC4/chicken-tangsuyuk-sweet-n-sour-chicken"
+    },
+    {
+      "id": "spoon-660494",
+      "title": "Soba Noodle Salad with Avocado and Mango",
+      "image": "https://img.spoonacular.com/recipes/660494-636x393.jpg",
       "protein": "veg",
       "cuisine": "",
       "prep_min": 45,
       "tag": "new",
       "ingredients": [
-        "coconut-flavored yogurt",
-        "berries and cherries",
-        "blueberries",
-        "coconut",
-        "almonds",
-        "hemp seeds",
-        "additional berries"
+        "brown rice vinegar",
+        "lime juice",
+        "agave nectar",
+        "sesame oil",
+        "extra virgin olive oil",
+        "salt",
+        "soba noodles",
+        "avocado",
+        "jalapeno pepper",
+        "mango",
+        "mint",
+        "scallions"
       ],
       "ingredients_detail": [
         {
-          "name": "coconut-flavored yogurt",
+          "name": "brown rice vinegar",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "lime juice",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "agave nectar",
+          "amount": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "sesame oil",
+          "amount": 2,
+          "unit": "teaspoons"
+        },
+        {
+          "name": "extra virgin olive oil",
+          "amount": 2,
+          "unit": "teaspoons"
+        },
+        {
+          "name": "salt",
+          "amount": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "soba noodles",
+          "amount": 8,
+          "unit": "ounces"
+        },
+        {
+          "name": "avocado",
+          "amount": 1,
+          "unit": "medium"
+        },
+        {
+          "name": "jalapeno pepper",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "mango",
           "amount": 0.6666667,
           "unit": "cup"
         },
         {
-          "name": "berries and cherries",
-          "amount": 1,
-          "unit": "cup"
-        },
-        {
-          "name": "blueberries",
+          "name": "mint",
           "amount": 0.25,
           "unit": "cup"
         },
         {
-          "name": "coconut",
-          "amount": 0.25,
-          "unit": "cup"
-        },
-        {
-          "name": "almonds",
-          "amount": 0.25,
-          "unit": "cup"
-        },
-        {
-          "name": "hemp seeds",
-          "amount": 1,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "additional berries",
-          "amount": 1,
-          "unit": "serving"
-        }
-      ],
-      "instructions": [],
-      "servings": 1,
-      "source_url": "https://fullbellysisters.blogspot.com/2015/08/cherry-berry-coconut-almond-smoothie.html"
-    },
-    {
-      "id": "spoon-1697591",
-      "title": "Buffalo Chicken Grilled Cheese",
-      "image": "https://img.spoonacular.com/recipes/1697591-636x393.jpg",
-      "protein": "veg",
-      "cuisine": "",
-      "prep_min": 45,
-      "tag": "new",
-      "ingredients": [
-        "erich's buffalo chicken dip",
-        "bread",
-        "butter",
-        "cheddar cheese",
-        "cheese"
-      ],
-      "ingredients_detail": [
-        {
-          "name": "erich's buffalo chicken dip",
-          "amount": 1,
-          "unit": "serving"
-        },
-        {
-          "name": "bread",
+          "name": "scallions",
           "amount": 2,
-          "unit": "slices"
-        },
-        {
-          "name": "butter",
-          "amount": 1,
-          "unit": "serving"
-        },
-        {
-          "name": "cheddar cheese",
-          "amount": 1,
-          "unit": "serving"
-        },
-        {
-          "name": "cheese",
-          "amount": 1,
-          "unit": "serving"
+          "unit": ""
         }
       ],
       "instructions": [
-        "Butter the outsides of two slices of bread.",
-        "Next, flip the bread over and either sprinkle some crumbled blue cheese or spread a thin layer on one slice of bread.",
-        "Then, sprinkle on as much cheddar cheese as you’d like.",
-        "Finally, using a spoon, layer on some of that Buffalo chicken dip and place the second piece of bread on top.",
-        "Warm up your pan to medium heat and cook the sandwich for about 2 minutes per side, or until it’s lightly toasty brown and cheese is oozing out the sides.",
-        "Grab a cold drink, some chips, and enjoy!"
+        "In a large bowl, whisk together the vinegar, lime juice, agave, oils, and salt.",
+        "Cook the soba noodles according to the package directions, being careful not to overcook  you want them on the firmer side.",
+        "Drain, then rinse very thoroughly with cold water until all traces of starchiness are gone, and drain again.  (It helps to gently swish the noodles around a bit with your hands as the water runs over them.)",
+        "Gently combine the noodles, dressing, avocado, jalapeno, mango, mint and scallions.",
+        "Serve immediately."
       ],
-      "servings": 1,
-      "source_url": "https://maplewoodroad.com/buffalo-chicken-grilled-cheese/"
+      "servings": 3,
+      "source_url": "https://www.foodista.com/recipe/CD8QSZWH/soba-noodle-salad-with-avocado-and-mango"
     },
     {
-      "id": "spoon-664025",
-      "title": "Turkey Enchilada Bake",
-      "image": "https://img.spoonacular.com/recipes/664025-636x393.jpg",
-      "protein": "turkey",
-      "cuisine": "Mexican",
+      "id": "spoon-657243",
+      "title": "Pumpkin Almond Burger Patties",
+      "image": "https://img.spoonacular.com/recipes/657243-636x393.jpg",
+      "protein": "veg",
+      "cuisine": "American",
       "prep_min": 45,
       "tag": "new",
       "ingredients": [
-        "avocados",
-        "black beans",
+        "almond flour",
+        "style bread crumbs",
+        "bell pepper",
+        "pepper",
+        "pumpkin puree",
+        "salt",
+        "sriracha sauce"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "almond flour",
+          "amount": 3,
+          "unit": "cups"
+        },
+        {
+          "name": "style bread crumbs",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "name": "bell pepper",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "pepper",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "pumpkin puree",
+          "amount": 2,
+          "unit": "cups"
+        },
+        {
+          "name": "salt",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "sriracha sauce",
+          "amount": 0.5,
+          "unit": "tsp"
+        }
+      ],
+      "instructions": [
+        "Preheat oven at 360 degree Fahrenheit. Prepare a cookie sheet with a liner.",
+        "In the meantime combine all the ingredients in a mixing bowl.",
+        "Mix well with a spoon or with hands.",
+        "Take a handful of the mix between palms and shape it into a ball.",
+        "Then press between palms just like burger patties and smoothen the sides as much as possible because while baking the patties may crack a bit. So make sure to smoothen them as much as possible.",
+        "Put the patties onto the cookie sheet and put it in the middle rack of the oven.",
+        "Let it bake for 20-25 minutes. Take it out and flip the patties to the other side and bake again for 20 minutes.",
+        "Take it out of the oven when cooked and serve with your favorite burger buns and toppings, or eat it in a wrap. Nutritional information is for patties alone."
+      ],
+      "servings": 6,
+      "source_url": "https://www.foodista.com/recipe/G6G5S67G/pumpkin-almond-burger-patties"
+    },
+    {
+      "id": "spoon-661223",
+      "title": "Spicy Vegan Chili",
+      "image": "https://img.spoonacular.com/recipes/661223-636x393.jpg",
+      "protein": "veg",
+      "cuisine": "American",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "pinto beans",
+        "cayenne pepper",
         "chili powder",
-        "chipotles in adobo",
-        "cilantro",
-        "corn tortillas",
-        "canned tomatoes",
+        "collard greens",
+        "cumin",
+        "garlic cloves",
+        "jalapeño pepper",
+        "olive oil",
+        "roma tomatoes",
+        "salt",
+        "sweet potato",
+        "tofu",
+        "vegetable broth",
+        "onion",
+        "yukon potato"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "pinto beans",
+          "amount": 260,
+          "unit": "g"
+        },
+        {
+          "name": "cayenne pepper",
+          "amount": 0.5,
+          "unit": "tsp"
+        },
+        {
+          "name": "chili powder",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "collard greens",
+          "amount": 4,
+          "unit": "cups"
+        },
+        {
+          "name": "cumin",
+          "amount": 1,
+          "unit": "tsp"
+        },
+        {
+          "name": "garlic cloves",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "jalapeño pepper",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "olive oil",
+          "amount": 1.5,
+          "unit": "Tbs"
+        },
+        {
+          "name": "roma tomatoes",
+          "amount": 3,
+          "unit": "medium"
+        },
+        {
+          "name": "salt",
+          "amount": 2,
+          "unit": "tsp"
+        },
+        {
+          "name": "sweet potato",
+          "amount": 1,
+          "unit": "medium"
+        },
+        {
+          "name": "tofu",
+          "amount": 396,
+          "unit": "g"
+        },
+        {
+          "name": "vegetable broth",
+          "amount": 3,
+          "unit": "cups"
+        },
+        {
+          "name": "onion",
+          "amount": 0.5,
+          "unit": "large"
+        },
+        {
+          "name": "yukon potato",
+          "amount": 1,
+          "unit": "medium"
+        }
+      ],
+      "instructions": [
+        "Heat the olive oil in a pot over medium-high heat. Once the pan is hot, add the onions. When the onions start to turn translucent, add the diced potatoes.",
+        "Let it cook for a minute or two, and add the diced tomatoes, jalapeo, garlic, chili powder, cumin, and cayenne pepper.Cook everything for about another minute and add the vegetable broth. Bring the broth to a boil.While the chili is cooking, remove the rough stem from the collard green leaves. Chop them into strips.Once the chili has boiled, add the beans and chopped collards. Chop the tofu in half, and crumble each half with your hands. I did this right over the boiling pot. Be careful of hot liquids splashing out!Season with the salt and boil for another 5-10 minutes, or until the potatoes can be easily pierced with a fork.Turn off the heat and serve the chili with some ground pepper.Store any leftovers in an airtight container."
+      ],
+      "servings": 5,
+      "source_url": "https://www.foodista.com/recipe/QMJ37S4P/spicy-vegan-chili"
+    },
+    {
+      "id": "spoon-1046982",
+      "title": "How to Make the Perfect Sweet Potato Sloppy Joes",
+      "image": "https://img.spoonacular.com/recipes/1046982-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "American",
+      "prep_min": 40,
+      "tag": "new",
+      "ingredients": [
+        "bell pepper",
         "garlic",
-        "chilies",
-        "tsp ground coriander",
-        "ground cumin",
-        "juice of lime",
         "ground turkey",
-        "a onion",
+        "olive oil",
+        "onion",
+        "salt and pepper",
+        "sweet potatoes",
+        "tomato paste",
+        "tomato sauce",
+        "water"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "bell pepper",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "garlic",
+          "amount": 1,
+          "unit": "clove"
+        },
+        {
+          "name": "ground turkey",
+          "amount": 1.5,
+          "unit": "pounds"
+        },
+        {
+          "name": "olive oil",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "onion",
+          "amount": 0.5,
+          "unit": "cup"
+        },
+        {
+          "name": "salt and pepper",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "sweet potatoes",
+          "amount": 4,
+          "unit": "large"
+        },
+        {
+          "name": "tomato paste",
+          "amount": 6,
+          "unit": "ounces"
+        },
+        {
+          "name": "tomato sauce",
+          "amount": 14,
+          "unit": "ounces"
+        },
+        {
+          "name": "water",
+          "amount": 1,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "Preheat the oven to 425 degrees. Pierce the sweet potatoes all over the skin with a fork. Rub the outside of the potatoes with olive oil and cover with foil.",
+        "Bake in the oven for 1 hour until fully cooked.",
+        "Brown the ground turkey in a skillet on medium heat. Once it's finished cooking, add the onion, bell pepper, and garlic.",
+        "Mix well. Cook until the mixture is fully cooked and starts to crumble.",
+        "Stir in the garlic, water, tomato paste, and tomato sauce. Stir until mixed well. Turn heat down to low and simmer for 20 minutes, stirring occasionally.",
+        "Remove the sweet potatoes from the foil and slice down the middle. Mash up the insides with a fork and pour the sloppy joe mix over sweet potatoes.",
+        "Serve and enjoy!"
+      ],
+      "servings": 4,
+      "source_url": "https://www.pinkwhen.com/how-to-make-the-perfect-sweet-potato-sloppy-joes/"
+    },
+    {
+      "id": "spoon-645608",
+      "title": "Grilled Turkey Burgers with Roasted Jalapeños and BBQ Sauce",
+      "image": "https://img.spoonacular.com/recipes/645608-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "American",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "avocado",
+        "baby bella mushrooms",
+        "bbq sauce",
+        "basil",
+        "garlic powder",
+        "grapeseed oil",
+        "ground turkey",
+        "jalapenos",
         "paprika",
-        "salsa",
-        "a mexican blend",
-        "cream",
-        "tomatillos",
+        "lettuce",
+        "salt",
+        "tomato",
         "onion"
       ],
       "ingredients_detail": [
         {
-          "name": "avocados",
-          "amount": 3,
+          "name": "avocado",
+          "amount": 1,
+          "unit": "slices"
+        },
+        {
+          "name": "baby bella mushrooms",
+          "amount": 5,
           "unit": ""
         },
         {
-          "name": "black beans",
-          "amount": 7,
-          "unit": "oz"
+          "name": "bbq sauce",
+          "amount": 5,
+          "unit": "servings"
         },
         {
-          "name": "chili powder",
-          "amount": 1,
-          "unit": "TBSP"
-        },
-        {
-          "name": "chipotles in adobo",
-          "amount": 3,
-          "unit": "oz"
-        },
-        {
-          "name": "cilantro",
-          "amount": 1,
+          "name": "basil",
+          "amount": 0.125,
           "unit": "cup"
         },
         {
-          "name": "corn tortillas",
-          "amount": 10.5,
-          "unit": ""
-        },
-        {
-          "name": "canned tomatoes",
-          "amount": 7,
-          "unit": "oz"
-        },
-        {
-          "name": "garlic",
-          "amount": 3,
-          "unit": "cloves"
-        },
-        {
-          "name": "chilies",
-          "amount": 4,
-          "unit": "oz"
-        },
-        {
-          "name": "tsp ground coriander",
+          "name": "garlic powder",
           "amount": 1,
-          "unit": ""
+          "unit": "teaspoon"
         },
         {
-          "name": "ground cumin",
+          "name": "grapeseed oil",
           "amount": 1,
-          "unit": "TBSP"
-        },
-        {
-          "name": "juice of lime",
-          "amount": 2,
-          "unit": ""
+          "unit": "teaspoon"
         },
         {
           "name": "ground turkey",
-          "amount": 10,
-          "unit": "oz"
+          "amount": 1,
+          "unit": "pound"
         },
         {
-          "name": "a onion",
-          "amount": 0.5,
+          "name": "jalapenos",
+          "amount": 4,
           "unit": ""
         },
         {
           "name": "paprika",
           "amount": 1,
-          "unit": "TBSP"
+          "unit": "teaspoon"
         },
         {
-          "name": "salsa",
+          "name": "lettuce",
           "amount": 1,
-          "unit": "cup"
-        },
-        {
-          "name": "a mexican blend",
-          "amount": 3,
-          "unit": "cups"
-        },
-        {
-          "name": "cream",
-          "amount": 1,
-          "unit": "cup"
-        },
-        {
-          "name": "tomatillos",
-          "amount": 3,
-          "unit": ""
-        },
-        {
-          "name": "onion",
-          "amount": 0.5,
-          "unit": ""
-        }
-      ],
-      "instructions": [
-        "Make the turkey mixture: Roast the vegetables: Preheat oven to 400 degrees.",
-        "Cut the tomatillos in half, slice the onion into  in slices and remove garlic from covering.",
-        "Add tomatillos, onion, garlic, tomatoes, green chilies, chipotles, chili powder, cumin, paprika, and coriander to blender or food processor. Blend until smooth.In a large bowel, add the turkey, beans, and sauce,",
-        "Mix together until everything is evenly distributed.",
-        "Layer 1:In a 9 by 13 baking dish, spread salsa on the bottom evenly. place 3.5 tortillas on top, making sure they cover evenly.",
-        "Add 1 cup of turkey mixture on top of tortillas, spreading evenly.",
-        "Add 1 cup of cheese on top, sprinkling evenly.",
-        "Place  cup of thinly sliced red onion on top of cheese.",
-        "Layer 2: Repeat of layer 1",
-        "Place tortillas, then turkey.",
-        "Place the sliced of avocado on top of turkey so they evenly cover.",
-        "Add lime juice evenly over avocado, this will help them stay green. Top with final cup of cheese. Cover with foil.",
-        "Place in oven and bake for 30 min, rotating  way.",
-        "Remove foil and chook for another 10 minutes.",
-        "Let cool for at least 10 minutes.",
-        "Serve with chopped cilantro and a dollop of sour cream.",
-        "Serve with tortillas chips. Enjoy!Your can find step by step pictures on how to make the turkey mixture on my Mini Mexican Bell Pepper Recipe",
-        "Again, I made a double batch of turkey when I made those, so this recipe was even easier. I highly recommend doing so."
-      ],
-      "servings": 8,
-      "source_url": "https://www.foodista.com/recipe/KX5B3NYB/turkey-enchilada-bake"
-    },
-    {
-      "id": "spoon-662070",
-      "title": "Stuffed Peppers With Ground Turkey",
-      "image": "https://img.spoonacular.com/recipes/662070-636x393.jpg",
-      "protein": "turkey",
-      "cuisine": "",
-      "prep_min": 45,
-      "tag": "new",
-      "ingredients": [
-        "bell peppers",
-        "onion",
-        "evoo",
-        "ground turkey",
-        "rice",
-        "tomatoes",
-        "salt",
-        "pepper",
-        "■ basil",
-        "■ cayenne pepper",
-        "■ onion salt"
-      ],
-      "ingredients_detail": [
-        {
-          "name": "bell peppers",
-          "amount": 4,
-          "unit": ""
-        },
-        {
-          "name": "onion",
-          "amount": 1,
-          "unit": "large"
-        },
-        {
-          "name": "evoo",
-          "amount": 1,
-          "unit": "tablespoon"
-        },
-        {
-          "name": "ground turkey",
-          "amount": 0.5,
-          "unit": "pound"
-        },
-        {
-          "name": "rice",
-          "amount": 0.25,
-          "unit": "cup"
-        },
-        {
-          "name": "tomatoes",
-          "amount": 2,
-          "unit": "slices"
+          "unit": "leaf"
         },
         {
           "name": "salt",
-          "amount": 0.25,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "pepper",
-          "amount": 0.125,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "■ basil",
-          "amount": 0.5,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "■ cayenne pepper",
-          "amount": 0.5,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "■ onion salt",
-          "amount": 0.25,
-          "unit": "teaspoon"
-        }
-      ],
-      "instructions": [
-        "Preheat oven at 35",
-        "Cut the tops off the bell peppers and clean out the seeds.",
-        "Bring a large pot of water to a boil, put the peppers in, and boil for 5 minutes.",
-        "Remove the peppers carefully and place in a big baking dish that allows just enough room for all the peppers. Set aside.",
-        "In the meantime begin to prepare the stuffing;",
-        "Put the onions in a skillet, drizzle with EVOO, and cook for 2 minutes before adding in the ground turkey.",
-        "Cook until the meat is browned and add in the rice; mix well and let it cook for another 2 minutes.",
-        "Add the diced tomatoes, salt, basil, cayenne pepper, and onion salt; allow to simmer for 15 minutes.",
-        "Remove the skillet from the stove and begin to stuff the peppers.",
-        "When finished, place a slice of tomato on top of each pepper to seal.",
-        "Put in the oven for 40 minutes.",
-        "Remove from the oven and let it cool for at least 5 minutes before serving.",
-        "If youre feeling naughty, add a dollop of sour cream on top  YUM!"
-      ],
-      "servings": 4,
-      "source_url": "https://www.foodista.com/recipe/BRT62GMC/stuffed-peppers-with-ground-turkey"
-    },
-    {
-      "id": "spoon-654435",
-      "title": "Pan Seared Salmon",
-      "image": "https://img.spoonacular.com/recipes/654435-636x393.jpg",
-      "protein": "salmon",
-      "cuisine": "",
-      "prep_min": 25,
-      "tag": "new",
-      "ingredients": [
-        "pepper",
-        "dill",
-        "garlic clove",
-        "lemon juice",
-        "lemon wedges",
-        "olive oil",
-        "salmon fillets",
-        "salt"
-      ],
-      "ingredients_detail": [
-        {
-          "name": "pepper",
-          "amount": 0.25,
-          "unit": "teaspoon"
-        },
-        {
-          "name": "dill",
-          "amount": 1,
-          "unit": "tbsp"
-        },
-        {
-          "name": "garlic clove",
-          "amount": 1,
-          "unit": ""
-        },
-        {
-          "name": "lemon juice",
-          "amount": 1,
-          "unit": "tbsp"
-        },
-        {
-          "name": "lemon wedges",
-          "amount": 2,
+          "amount": 5,
           "unit": "servings"
         },
         {
-          "name": "olive oil",
-          "amount": 0.25,
-          "unit": "cup"
+          "name": "tomato",
+          "amount": 1,
+          "unit": "slices"
         },
         {
-          "name": "salmon fillets",
-          "amount": 12,
-          "unit": "oz"
-        },
-        {
-          "name": "salt",
-          "amount": 0.125,
-          "unit": "teaspoon"
+          "name": "onion",
+          "amount": 0.5,
+          "unit": ""
         }
       ],
       "instructions": [
-        "In a bowl combine 1 tbsp olive oil, salt, pepper, garlic, lemon juice, and dill.",
-        "Add salmon fillets.",
-        "Let them marinate for 15 minutes at room temperature.Preheat a large skillet on medium heat for 2 minutes.",
-        "Add 1 tsp olive oil and then add salmon. Cook for 5 minutes per side. Salmon should be done when it flakes easily with a fork.",
-        "Transfer to plates.",
-        "Serve with lemon wedges."
+        "Preheat the oven to 37",
+        "Place whole jalapeos in a casserole dish or baking sheet and roast about 15 minutes or until skin is flaying away from flesh and flesh is soft.",
+        "Remove from oven and allow to cool. Once cool enough to handle, peel the skin from the flesh and discard the skin.",
+        "Cut jalapeos lengthwise, remove the stem and seeds and coarsely chop. Set aside.In a medium sized skillet, heat the grapeseed (or olive) oil. Saut onion on medium high heat until translucent, about 8 to 10 minutes.",
+        "Add the chopped mushrooms and saut until the onion and mushroom are dark brown and soft, about 5 to 8 more minutes.",
+        "Remove from heat and set aside.Fire up the grill to medium high heat. In a mixing bowl, add the ground meat, salt, garlic powder, paprika and basil. Once the sauted onion and mushroom is cool, add it to the mixing bowl as well and mix everything together using your hands. Form 5 patties out of the meat. Once the grill is hot, place patties on and grill until brown and charred on the first side, about 3 minutes for the elk or bison, 5 minutes for the turkey. Flip and grill an additional 3 to 5 minutes, until meat is brown and has nice grill marks. If using elk or bison, cook to desired donness. If using turkey meat, cook all the way through but careful not to over-cook."
       ],
-      "servings": 2,
-      "source_url": "https://www.foodista.com/recipe/ZCMGYFYW/pan-seared-salmon"
+      "servings": 5,
+      "source_url": "https://www.foodista.com/recipe/2FTWYPY5/grilled-burgers-with-roasted-jalape-os-and-cherry-bbq-sauce"
     }
   ]
 }
