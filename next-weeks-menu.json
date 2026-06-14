@@ -1,0 +1,682 @@
+{
+  "week_of": "Dinners for June 22 – 25",
+  "chef_note": "A fresh lineup — eight to choose from, pick your four. Salmon's in this week.",
+  "candidates": [
+    {
+      "id": "spoon-638088",
+      "title": "Chicken Farfalle with Low-Fat Alfredo Sauce",
+      "image": "https://img.spoonacular.com/recipes/638088-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "Mediterranean",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "bell pepper",
+        "butter",
+        "chicken breasts",
+        "farfalle pasta",
+        "flour",
+        "garlic powder",
+        "juice of lemon",
+        "parmesan cheese",
+        "salt",
+        "skim milk",
+        "white wine"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "bell pepper",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "butter",
+          "amount": 1.5,
+          "unit": "Tbs"
+        },
+        {
+          "name": "chicken breasts",
+          "amount": 1,
+          "unit": "pound"
+        },
+        {
+          "name": "farfalle pasta",
+          "amount": 1,
+          "unit": "lb"
+        },
+        {
+          "name": "flour",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "garlic powder",
+          "amount": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "juice of lemon",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "parmesan cheese",
+          "amount": 2,
+          "unit": "teaspoons"
+        },
+        {
+          "name": "salt",
+          "amount": 4,
+          "unit": "servings"
+        },
+        {
+          "name": "skim milk",
+          "amount": 1.5,
+          "unit": "cups"
+        },
+        {
+          "name": "white wine",
+          "amount": 0.33333334,
+          "unit": "cup"
+        }
+      ],
+      "instructions": [
+        "Cook chicken breasts (I sauteed mine with a little olive oil and salt and pepper) and set aside. Cook pasta while cooking the chicken and set aside.",
+        "In a sauce pan, melt butter.",
+        "Add flour and stir in with butter, cook for 1 minute.",
+        "Whisk in milk, salt and pepper, garlic powder, lemon juice, and wine. Bring to a boil, constantly whisking. Reduce the heat and simmer for about 5 more minutes. Sauce should thicken.",
+        "In a large saute pan, add pasta, chicken, and any other desired additions.",
+        "Heat pan on medium heat.",
+        "Add alfredo sauce and toss with pasta.",
+        "Sprinkle with Parmesan cheese and additional salt and pepper (if needed) and serve!Notes: This recipe made more sauce than I really needed, but I liked having extra. This way, you can add as much sauce as you prefer!"
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/KBLGPNRP/chicken-farfalle-with-low-fat-alfredo-sauce"
+    },
+    {
+      "id": "spoon-641903",
+      "title": "Easy Chicken Marsala",
+      "image": "https://img.spoonacular.com/recipes/641903-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "butter",
+        "chicken breasts",
+        "flour",
+        "marsala wine",
+        "milk",
+        "mushrooms",
+        "pepper",
+        "salt"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "butter",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "chicken breasts",
+          "amount": 8,
+          "unit": "servings"
+        },
+        {
+          "name": "flour",
+          "amount": 2,
+          "unit": "teaspoons"
+        },
+        {
+          "name": "marsala wine",
+          "amount": 0.75,
+          "unit": "cup"
+        },
+        {
+          "name": "milk",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "mushrooms",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "pepper",
+          "amount": 0.125,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "salt",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "In large saute or fry pan, melt butter. While butter is melting, combine flour, salt and pepper in small bowl. Dip each piece of chicken in milk; shake off excess. Dredge chicken in flour mixture and add to fry pan. (I like to cut chicken breasts in half before coating.)",
+        "Saute chicken in butter over medium to medium-high heat until browned and cooked through, turning often.",
+        "Add more butter as needed. (Be careful turning chicken so as not to break off any of the flour coating.)",
+        "Remove chicken from pan and place on platter. Keep chicken warm while making the sauce.Turn heat to medium high and add the mushrooms; saute until cooked. With mushrooms still in the pan, deglaze with the wine, stirring to get all of the brown bits off the bottom of the pan. Turn heat to medium low and continue to cook sauce, stirring frequently, until sauce has thickened slightly.(Note: Sauce should be tasted frequently, and more wine or butter can be added as necessary. If sauce does not thicken properly, add a little bit of flour and continue to stir.)When sauce is ready, add chicken back to the pan and turn to coat.",
+        "Remove chicken to serving platter and top with remaining sauce. Decorate with parsley sprigs.Submitted by: Lisa M. Rohner"
+      ],
+      "servings": 8,
+      "source_url": "https://www.foodista.com/recipe/NBRBXZFZ/easy-chicken-marsala"
+    },
+    {
+      "id": "spoon-1095683",
+      "title": "Paleo Mango Coconut Curried Chicken Salad",
+      "image": "https://img.spoonacular.com/recipes/1095683-636x393.jpg",
+      "protein": "chicken",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "chicken breast",
+        "coconut oil",
+        "mango",
+        "blueberries",
+        "pumpkin seeds",
+        "green onions",
+        "coconut",
+        "coconut cream",
+        "curry powder",
+        "salt"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "chicken breast",
+          "amount": 2,
+          "unit": "small"
+        },
+        {
+          "name": "coconut oil",
+          "amount": 2,
+          "unit": "tablespoons"
+        },
+        {
+          "name": "mango",
+          "amount": 200,
+          "unit": "g"
+        },
+        {
+          "name": "blueberries",
+          "amount": 50,
+          "unit": "g"
+        },
+        {
+          "name": "pumpkin seeds",
+          "amount": 2,
+          "unit": "Tablespoons"
+        },
+        {
+          "name": "green onions",
+          "amount": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "coconut",
+          "amount": 2,
+          "unit": "Tablespoons"
+        },
+        {
+          "name": "coconut cream",
+          "amount": 60,
+          "unit": "ml"
+        },
+        {
+          "name": "curry powder",
+          "amount": 1,
+          "unit": "Tablespoon"
+        },
+        {
+          "name": "salt",
+          "amount": 2,
+          "unit": "servings"
+        }
+      ],
+      "instructions": [
+        "Dice the chicken breast into small pieces and pan-fry them in the coconut oil until fully cooked.",
+        "Let cool.",
+        "Place the chicken pieces into a large bowl with the mango, blueberries, pumpkin seeds, chives, coconut shreds, curry powder, coconut cream, and salt to taste.",
+        "Mix together well.",
+        "Serve by itself, on top of a salad, or on a baked butternut squash half."
+      ],
+      "servings": 2,
+      "source_url": "https://www.foodista.com/recipe/TRXSK43B/paleo-mango-coconut-curried-chicken-salad-recipe"
+    },
+    {
+      "id": "spoon-679539",
+      "title": "Cherry Berry Coconut Almond Smoothie Bowl",
+      "image": "https://img.spoonacular.com/recipes/679539-636x393.png",
+      "protein": "veg",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "coconut-flavored yogurt",
+        "berries and cherries",
+        "blueberries",
+        "coconut",
+        "almonds",
+        "hemp seeds",
+        "additional berries"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "coconut-flavored yogurt",
+          "amount": 0.6666667,
+          "unit": "cup"
+        },
+        {
+          "name": "berries and cherries",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "blueberries",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "coconut",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "almonds",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "hemp seeds",
+          "amount": 1,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "additional berries",
+          "amount": 1,
+          "unit": "serving"
+        }
+      ],
+      "instructions": [],
+      "servings": 1,
+      "source_url": "https://fullbellysisters.blogspot.com/2015/08/cherry-berry-coconut-almond-smoothie.html"
+    },
+    {
+      "id": "spoon-1697591",
+      "title": "Buffalo Chicken Grilled Cheese",
+      "image": "https://img.spoonacular.com/recipes/1697591-636x393.jpg",
+      "protein": "veg",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "erich's buffalo chicken dip",
+        "bread",
+        "butter",
+        "cheddar cheese",
+        "cheese"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "erich's buffalo chicken dip",
+          "amount": 1,
+          "unit": "serving"
+        },
+        {
+          "name": "bread",
+          "amount": 2,
+          "unit": "slices"
+        },
+        {
+          "name": "butter",
+          "amount": 1,
+          "unit": "serving"
+        },
+        {
+          "name": "cheddar cheese",
+          "amount": 1,
+          "unit": "serving"
+        },
+        {
+          "name": "cheese",
+          "amount": 1,
+          "unit": "serving"
+        }
+      ],
+      "instructions": [
+        "Butter the outsides of two slices of bread.",
+        "Next, flip the bread over and either sprinkle some crumbled blue cheese or spread a thin layer on one slice of bread.",
+        "Then, sprinkle on as much cheddar cheese as you’d like.",
+        "Finally, using a spoon, layer on some of that Buffalo chicken dip and place the second piece of bread on top.",
+        "Warm up your pan to medium heat and cook the sandwich for about 2 minutes per side, or until it’s lightly toasty brown and cheese is oozing out the sides.",
+        "Grab a cold drink, some chips, and enjoy!"
+      ],
+      "servings": 1,
+      "source_url": "https://maplewoodroad.com/buffalo-chicken-grilled-cheese/"
+    },
+    {
+      "id": "spoon-664025",
+      "title": "Turkey Enchilada Bake",
+      "image": "https://img.spoonacular.com/recipes/664025-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "Mexican",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "avocados",
+        "black beans",
+        "chili powder",
+        "chipotles in adobo",
+        "cilantro",
+        "corn tortillas",
+        "canned tomatoes",
+        "garlic",
+        "chilies",
+        "tsp ground coriander",
+        "ground cumin",
+        "juice of lime",
+        "ground turkey",
+        "a onion",
+        "paprika",
+        "salsa",
+        "a mexican blend",
+        "cream",
+        "tomatillos",
+        "onion"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "avocados",
+          "amount": 3,
+          "unit": ""
+        },
+        {
+          "name": "black beans",
+          "amount": 7,
+          "unit": "oz"
+        },
+        {
+          "name": "chili powder",
+          "amount": 1,
+          "unit": "TBSP"
+        },
+        {
+          "name": "chipotles in adobo",
+          "amount": 3,
+          "unit": "oz"
+        },
+        {
+          "name": "cilantro",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "corn tortillas",
+          "amount": 10.5,
+          "unit": ""
+        },
+        {
+          "name": "canned tomatoes",
+          "amount": 7,
+          "unit": "oz"
+        },
+        {
+          "name": "garlic",
+          "amount": 3,
+          "unit": "cloves"
+        },
+        {
+          "name": "chilies",
+          "amount": 4,
+          "unit": "oz"
+        },
+        {
+          "name": "tsp ground coriander",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "ground cumin",
+          "amount": 1,
+          "unit": "TBSP"
+        },
+        {
+          "name": "juice of lime",
+          "amount": 2,
+          "unit": ""
+        },
+        {
+          "name": "ground turkey",
+          "amount": 10,
+          "unit": "oz"
+        },
+        {
+          "name": "a onion",
+          "amount": 0.5,
+          "unit": ""
+        },
+        {
+          "name": "paprika",
+          "amount": 1,
+          "unit": "TBSP"
+        },
+        {
+          "name": "salsa",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "a mexican blend",
+          "amount": 3,
+          "unit": "cups"
+        },
+        {
+          "name": "cream",
+          "amount": 1,
+          "unit": "cup"
+        },
+        {
+          "name": "tomatillos",
+          "amount": 3,
+          "unit": ""
+        },
+        {
+          "name": "onion",
+          "amount": 0.5,
+          "unit": ""
+        }
+      ],
+      "instructions": [
+        "Make the turkey mixture: Roast the vegetables: Preheat oven to 400 degrees.",
+        "Cut the tomatillos in half, slice the onion into  in slices and remove garlic from covering.",
+        "Add tomatillos, onion, garlic, tomatoes, green chilies, chipotles, chili powder, cumin, paprika, and coriander to blender or food processor. Blend until smooth.In a large bowel, add the turkey, beans, and sauce,",
+        "Mix together until everything is evenly distributed.",
+        "Layer 1:In a 9 by 13 baking dish, spread salsa on the bottom evenly. place 3.5 tortillas on top, making sure they cover evenly.",
+        "Add 1 cup of turkey mixture on top of tortillas, spreading evenly.",
+        "Add 1 cup of cheese on top, sprinkling evenly.",
+        "Place  cup of thinly sliced red onion on top of cheese.",
+        "Layer 2: Repeat of layer 1",
+        "Place tortillas, then turkey.",
+        "Place the sliced of avocado on top of turkey so they evenly cover.",
+        "Add lime juice evenly over avocado, this will help them stay green. Top with final cup of cheese. Cover with foil.",
+        "Place in oven and bake for 30 min, rotating  way.",
+        "Remove foil and chook for another 10 minutes.",
+        "Let cool for at least 10 minutes.",
+        "Serve with chopped cilantro and a dollop of sour cream.",
+        "Serve with tortillas chips. Enjoy!Your can find step by step pictures on how to make the turkey mixture on my Mini Mexican Bell Pepper Recipe",
+        "Again, I made a double batch of turkey when I made those, so this recipe was even easier. I highly recommend doing so."
+      ],
+      "servings": 8,
+      "source_url": "https://www.foodista.com/recipe/KX5B3NYB/turkey-enchilada-bake"
+    },
+    {
+      "id": "spoon-662070",
+      "title": "Stuffed Peppers With Ground Turkey",
+      "image": "https://img.spoonacular.com/recipes/662070-636x393.jpg",
+      "protein": "turkey",
+      "cuisine": "",
+      "prep_min": 45,
+      "tag": "new",
+      "ingredients": [
+        "bell peppers",
+        "onion",
+        "evoo",
+        "ground turkey",
+        "rice",
+        "tomatoes",
+        "salt",
+        "pepper",
+        "■ basil",
+        "■ cayenne pepper",
+        "■ onion salt"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "bell peppers",
+          "amount": 4,
+          "unit": ""
+        },
+        {
+          "name": "onion",
+          "amount": 1,
+          "unit": "large"
+        },
+        {
+          "name": "evoo",
+          "amount": 1,
+          "unit": "tablespoon"
+        },
+        {
+          "name": "ground turkey",
+          "amount": 0.5,
+          "unit": "pound"
+        },
+        {
+          "name": "rice",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "tomatoes",
+          "amount": 2,
+          "unit": "slices"
+        },
+        {
+          "name": "salt",
+          "amount": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "pepper",
+          "amount": 0.125,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "■ basil",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "■ cayenne pepper",
+          "amount": 0.5,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "■ onion salt",
+          "amount": 0.25,
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "Preheat oven at 35",
+        "Cut the tops off the bell peppers and clean out the seeds.",
+        "Bring a large pot of water to a boil, put the peppers in, and boil for 5 minutes.",
+        "Remove the peppers carefully and place in a big baking dish that allows just enough room for all the peppers. Set aside.",
+        "In the meantime begin to prepare the stuffing;",
+        "Put the onions in a skillet, drizzle with EVOO, and cook for 2 minutes before adding in the ground turkey.",
+        "Cook until the meat is browned and add in the rice; mix well and let it cook for another 2 minutes.",
+        "Add the diced tomatoes, salt, basil, cayenne pepper, and onion salt; allow to simmer for 15 minutes.",
+        "Remove the skillet from the stove and begin to stuff the peppers.",
+        "When finished, place a slice of tomato on top of each pepper to seal.",
+        "Put in the oven for 40 minutes.",
+        "Remove from the oven and let it cool for at least 5 minutes before serving.",
+        "If youre feeling naughty, add a dollop of sour cream on top  YUM!"
+      ],
+      "servings": 4,
+      "source_url": "https://www.foodista.com/recipe/BRT62GMC/stuffed-peppers-with-ground-turkey"
+    },
+    {
+      "id": "spoon-654435",
+      "title": "Pan Seared Salmon",
+      "image": "https://img.spoonacular.com/recipes/654435-636x393.jpg",
+      "protein": "salmon",
+      "cuisine": "",
+      "prep_min": 25,
+      "tag": "new",
+      "ingredients": [
+        "pepper",
+        "dill",
+        "garlic clove",
+        "lemon juice",
+        "lemon wedges",
+        "olive oil",
+        "salmon fillets",
+        "salt"
+      ],
+      "ingredients_detail": [
+        {
+          "name": "pepper",
+          "amount": 0.25,
+          "unit": "teaspoon"
+        },
+        {
+          "name": "dill",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "garlic clove",
+          "amount": 1,
+          "unit": ""
+        },
+        {
+          "name": "lemon juice",
+          "amount": 1,
+          "unit": "tbsp"
+        },
+        {
+          "name": "lemon wedges",
+          "amount": 2,
+          "unit": "servings"
+        },
+        {
+          "name": "olive oil",
+          "amount": 0.25,
+          "unit": "cup"
+        },
+        {
+          "name": "salmon fillets",
+          "amount": 12,
+          "unit": "oz"
+        },
+        {
+          "name": "salt",
+          "amount": 0.125,
+          "unit": "teaspoon"
+        }
+      ],
+      "instructions": [
+        "In a bowl combine 1 tbsp olive oil, salt, pepper, garlic, lemon juice, and dill.",
+        "Add salmon fillets.",
+        "Let them marinate for 15 minutes at room temperature.Preheat a large skillet on medium heat for 2 minutes.",
+        "Add 1 tsp olive oil and then add salmon. Cook for 5 minutes per side. Salmon should be done when it flakes easily with a fork.",
+        "Transfer to plates.",
+        "Serve with lemon wedges."
+      ],
+      "servings": 2,
+      "source_url": "https://www.foodista.com/recipe/ZCMGYFYW/pan-seared-salmon"
+    }
+  ]
+}
