@@ -240,15 +240,30 @@
     }
     return false;
   }
+  // Selected dinners whose authoritative ingredient list is missing — surfaced loudly by
+  // kitchenBox(). Recomputed on every weekIngredients() call.
+  var missingDetail = [];
   function weekIngredients() {
     var seen = {}, out = [];
+    missingDetail = [];
     menu.candidates.forEach(function (c) {
-      if (!selected[c.id] || !c.ingredients) return;
-      c.ingredients.forEach(function (ing) {
-        var cn = canonItem(ing);
+      if (!selected[c.id]) return;
+      // The shopping list is built ONLY from the authoritative ingredients_detail — no fallback
+      // to the bare `ingredients` list (that truncation is what once dropped the taco packet).
+      // A selected dinner with no detail is an upstream data error: fail loud, never shop a
+      // partial list.
+      if (!Array.isArray(c.ingredients_detail) || !c.ingredients_detail.length) {
+        missingDetail.push(c.title || c.id);
+        try { console.warn("weekIngredients: no ingredients_detail for selected dinner", c.id, c.title); } catch (e) {}
+        return;
+      }
+      c.ingredients_detail.forEach(function (d) {
+        var name = d && d.name;
+        if (!name) return;
+        var cn = canonItem(name);
         if (!cn || seen[cn]) return;
         seen[cn] = true;
-        out.push({ canon: cn, display: ing, staple: isStaple(cn), organic: /blueberr|strawberr/.test(cn) });
+        out.push({ canon: cn, display: name, staple: isStaple(cn), organic: /blueberr|strawberr/.test(cn) });
       });
     });
     out.sort(function (a, b) { return a.canon.localeCompare(b.canon); });
@@ -257,9 +272,17 @@
   function styleChip(b) { b.style.fontSize = "12.5px"; b.style.fontWeight = "600"; b.style.padding = "6px 12px"; b.style.borderRadius = "999px"; b.style.cursor = "pointer"; }
   function khint(t) { var d = el("div", null, t); d.style.fontSize = "12px"; d.style.color = "var(--muted)"; d.style.margin = "2px 0 9px"; return d; }
   function klabel(t, top) { var d = el("div", null, t); d.style.fontFamily = "'Fraunces'"; d.style.fontWeight = "600"; d.style.fontSize = "15px"; if (top) d.style.marginTop = "16px"; return d; }
+  function warnBox_style(d) { d.style.cssText = "background:#FBEEE8;border:1px solid var(--ember);color:#8a2e16;font-size:13px;font-weight:600;line-height:1.45;padding:11px 14px;border-radius:10px;margin-bottom:14px"; }
   function kitchenBox() {
     var items = weekIngredients();
     var box = el("div", "extras-box");
+    if (missingDetail.length) {
+      var warnBox = el("div");
+      warnBox_style(warnBox);
+      warnBox.textContent = "⚠ Couldn't load the full ingredients for: " + missingDetail.join(", ") +
+        ". These dinners are NOT on the shopping list — tell Trevin before ordering.";
+      box.appendChild(warnBox);
+    }
     var fresh = items.filter(function (i) { return !i.staple; });
     var stap = items.filter(function (i) { return i.staple; });
 
@@ -510,15 +533,15 @@
     return (Math.round(n * 100) / 100).toString();
   }
   function recipeIngredients(r) {
+    // Authoritative ingredients_detail ONLY — no fallback to the bare `ingredients` list.
     var out = [];
     var berry = function (s) { return /blueberr|strawberr/.test(String(s).toLowerCase()); };
-    if (Array.isArray(r.ingredients_detail) && r.ingredients_detail.length) {
+    if (Array.isArray(r.ingredients_detail)) {
       r.ingredients_detail.forEach(function (d) {
+        if (!d || !d.name) return;
         var amt = fmtAmt(d.amount), u = (d.unit || "").trim();
         out.push({ amt: amt ? (amt + (u ? " " + u : "")) : "", name: d.name, organic: berry(d.name) });
       });
-    } else if (Array.isArray(r.ingredients)) {
-      r.ingredients.forEach(function (n) { out.push({ amt: "", name: n, organic: berry(n) }); });
     }
     return out;
   }
@@ -546,8 +569,8 @@
     rc.appendChild(meta);
 
     var ing = recipeIngredients(r);
+    var s1 = el("div", "r-sec"), h1 = el("h3", null, "Ingredients"); h1.appendChild(el("span", "rule")); s1.appendChild(h1);
     if (ing.length) {
-      var s1 = el("div", "r-sec"), h1 = el("h3", null, "Ingredients"); h1.appendChild(el("span", "rule")); s1.appendChild(h1);
       var ul = el("ul", "ingr-list");
       ing.forEach(function (line) {
         var li = document.createElement("li");
@@ -556,8 +579,11 @@
         if (line.organic) li.appendChild(el("span", "org", "organic"));
         ul.appendChild(li);
       });
-      s1.appendChild(ul); rc.appendChild(s1);
+      s1.appendChild(ul);
+    } else {
+      s1.appendChild(el("p", "r-empty", "Ingredients couldn't be loaded for this recipe."));
     }
+    rc.appendChild(s1);
 
     var s2 = el("div", "r-sec"), h2 = el("h3", null, "Method"); h2.appendChild(el("span", "rule")); s2.appendChild(h2);
     if (r.instructions && r.instructions.length) {
